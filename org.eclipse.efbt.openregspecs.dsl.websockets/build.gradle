@@ -1,0 +1,24 @@
+apply plugin: 'application'
+
+dependencies {
+	api project(':org.eclipse.efbt.openregspecs.dsl')
+	api project(':org.eclipse.efbt.openregspecs.dsl.ide')
+	api "org.eclipse.xtext:org.eclipse.xtext.ide:${xtextVersion}"
+	api "org.slf4j:slf4j-api:1.7.22"
+	api "org.slf4j:slf4j-simple:1.6.1"
+	api "org.java-websocket:Java-WebSocket:1.3.8"
+}
+
+// Add a start script for the websocket case
+mainClassName = 'org.eclipse.efbt.openregspecs.dsl.websockets.RunWebSocketServer'
+startScripts {
+	applicationName = 'OpenRegSpecs-websocket'
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Websocket',
+                   'Implementation-Version': archiveVersion,
+                   'Main-Class': 'org.eclipse.efbt.openregspecs.dsl.websockets.RunWebSocketServer'
+    }
+}

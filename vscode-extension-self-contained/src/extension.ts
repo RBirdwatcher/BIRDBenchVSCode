@@ -11,8 +11,8 @@ let lc: LanguageClient;
 
 export function activate(context: ExtensionContext) {
     // The server is a locally installed in src/mydsl
-    let launcher = os.platform() === 'win32' ? 'mydsl-standalone.bat' : 'mydsl-standalone';
-    let script = context.asAbsolutePath(path.join('src', 'mydsl', 'bin', launcher));
+    let launcher = os.platform() === 'win32' ? 'OpenRegSpecs-standalone.bat' : 'OpenRegSpecs-standalone';
+    let script = context.asAbsolutePath(path.join('src', 'OpenRegSpecs', 'bin', launcher));
 
     let serverOptions: ServerOptions = {
         run : { command: script },
@@ -20,7 +20,7 @@ export function activate(context: ExtensionContext) {
     };
     
     let clientOptions: LanguageClientOptions = {
-        documentSelector: ['mydsl'],
+        documentSelector: ['OpenRegSpecs'],
         synchronize: {
             fileEvents: workspace.createFileSystemWatcher('**/*.*')
         }
@@ -29,14 +29,14 @@ export function activate(context: ExtensionContext) {
     // Create the language client and start the client.
     lc = new LanguageClient('Xtext Server', serverOptions, clientOptions);
     
-    var disposable2 =commands.registerCommand("mydsl.a.proxy", async () => {
+    var disposable2 =commands.registerCommand("OpenRegSpecs.a.proxy", async () => {
         let activeEditor = window.activeTextEditor;
-        if (!activeEditor || !activeEditor.document || activeEditor.document.languageId !== 'mydsl') {
+        if (!activeEditor || !activeEditor.document || activeEditor.document.languageId !== 'OpenRegSpecs') {
             return;
         }
 
         if (activeEditor.document.uri instanceof Uri) {
-            commands.executeCommand("mydsl.a", activeEditor.document.uri.toString());
+            commands.executeCommand("OpenRegSpecs.a", activeEditor.document.uri.toString());
         }
     })
     context.subscriptions.push(disposable2);

@@ -1,8 +1,8 @@
-evaluationDependsOn(':org.xtext.example.mydsl.ide')
+evaluationDependsOn(':org.eclipse.efbt.openregspecs.dsl.ide')
 
 task copyApplication(type: Sync) {
-    from tasks.getByPath(':org.xtext.example.mydsl.ide:installDist').outputs
-    into 'lib/mydsl'
+    from tasks.getByPath(':org.eclipse.efbt.openregspecs.dsl.ide:installDist').outputs
+    into 'lib/OpenRegSpecs'
 }
 
 apply plugin: 'base'
