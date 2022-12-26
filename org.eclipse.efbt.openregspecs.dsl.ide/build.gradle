@@ -13,7 +13,7 @@ startScripts {
 
 // Add another start script for the standalone / self-contained case
 task standaloneStartScript(type: CreateStartScripts) {
-	mainClass = 'org.eclipse.efbt.openregspecs.dsl.ide.server.ServerLauncher'
+	mainClass = 'org.eclipse.efbt.openregspecs.dsl.ide.ServerLauncher'
 	applicationName = 'OpenRegSpecs-standalone'
 	def t = project.tasks.getByPath('startScripts');
     classpath = t.classpath;

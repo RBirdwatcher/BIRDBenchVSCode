@@ -1,4 +1,3 @@
-include 'org.eclipse.efbt.openregspecs.model'
 include 'org.eclipse.efbt.openregspecs.dsl'
 include 'org.eclipse.efbt.openregspecs.dsl.ide'
 include 'org.eclipse.efbt.openregspecs.dsl.websockets'

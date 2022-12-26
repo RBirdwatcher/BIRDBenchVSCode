@@ -3,6 +3,9 @@
  */
 package org.eclipse.efbt.openregspecs.dsl;
 
+import com.google.inject.Injector;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Open_reg_specsPackage;
 
 /**
  * Initialization support for running Xtext languages without Equinox extension registry.
@@ -11,5 +14,13 @@ public class OpenRegSpecsStandaloneSetup extends OpenRegSpecsStandaloneSetupGene
 
 	public static void doSetup() {
 		new OpenRegSpecsStandaloneSetup().createInjectorAndDoEMFRegistration();
+	}
+
+	@Override
+	public void register(Injector injector) {
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/open_reg_specs")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/open_reg_specs", Open_reg_specsPackage.eINSTANCE);
+		}
+		super.register(injector);
 	}
 }
