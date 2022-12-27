@@ -14,6 +14,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.nio.file.FileSystems;
 import java.sql.Timestamp;
 import java.util.concurrent.Future;
 
@@ -45,10 +46,12 @@ public class ServerLauncher {
 
 	public void start(final InputStream in, final OutputStream out) throws Exception {
 		System.err.println("Starting Xtext Language Server.");
+		String currentDir = System.getProperty("user.dir");
+		String fileSeparator = FileSystems.getDefault().getSeparator();
 		String id = ServerLauncher.class.getName() + "-"
 				+ new Timestamp(System.currentTimeMillis()).toString().replaceAll(" ", "_");
 		Launcher<LanguageClient> launcher = Launcher.createLauncher(languageServer, LanguageClient.class, in, out, true,
-				new PrintWriter(new FileOutputStream((("C:\\Users\\LENOVO\\logs\\abc") + ".log")), true));
+				new PrintWriter(new FileOutputStream((currentDir + fileSeparator  + "server.log")), true));
 		languageServer.connect(launcher.getRemoteProxy());
 		Future<Void> future = launcher.startListening();
 		System.err.println("started.");
@@ -59,12 +62,14 @@ public class ServerLauncher {
 
 	public static void redirectStandardStreams() throws Exception {
 		System.setIn(new ByteArrayInputStream(new byte[0]));
+		String currentDir = System.getProperty("user.dir");
+		String fileSeparator = FileSystems.getDefault().getSeparator();
 		String id = ServerLauncher.class.getName() + "-"
 				+ new Timestamp(System.currentTimeMillis()).toString().replaceAll(" ", "_");
 		if (ServerLauncher.IS_DEBUG) {
-			FileOutputStream stdFileOut = new FileOutputStream((("C:\\Users\\LENOVO\\logs\\abcout") + ".log"));
+			FileOutputStream stdFileOut = new FileOutputStream((currentDir + fileSeparator + "out.log"));
 			System.setOut(new PrintStream(stdFileOut, true));
-			FileOutputStream stdFileErr = new FileOutputStream((("C:\\Users\\LENOVO\\logs\\abcerror") + ".log"));
+			FileOutputStream stdFileErr = new FileOutputStream((currentDir + fileSeparator + "error.log") );
 			System.setErr(new PrintStream(stdFileErr, true));
 		} else {
 			System.setOut(new PrintStream(new ByteArrayOutputStream()));
