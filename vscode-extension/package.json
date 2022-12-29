@@ -3,15 +3,15 @@
     "displayName": "Xtext VS Code example",
     "description": "A simple DSL example for VS Code",
     "version": "0.0.31",
-    "publisher": "itemis",
-    "icon": "images/itemis.png",
+    "publisher": "BirdSoftwareSolutions",
+    "icon": "images/BirdSoftwareSolutions.png",
     "license": "EPL-1.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/itemis/xtext-languageserver-example.git"
+        "url": "http://www.BirdSoftwareSolutions.com"
     },
     "bugs": {
-        "url": "https://github.com/itemis/xtext-languageserver-example/issues"
+        "url": "http://www.BirdSoftwareSolutions.com"
     },
     "engines": {
         "vscode": "^1.67.1"

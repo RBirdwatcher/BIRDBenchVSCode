@@ -3,15 +3,15 @@
   "main": "./lib/main",
   "version": "0.0.28",
   "description": "OpenRegSpecs language support for Atom-IDE. Demonstrates Xtext Integration in Atom.",
-  "publisher": "itemis",
-  "icon": "images/itemis.png",
+  "publisher": "BirdSoftwareSolutions",
+  "icon": "images/BirdSoftwareSolutions.png",
   "license": "EPL-1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/itemis/xtext-languageserver-example.git"
+    "url": "www.birdsoftwaresolutions.com"
   },
   "bugs": {
-    "url": "https://github.com/itemis/xtext-languageserver-example/issues"
+    "url": "www.birdsoftwaresolutions.com"
   },
   "engines": {
     "atom": ">=1.21.0"
