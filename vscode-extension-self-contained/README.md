@@ -1,4 +1,4 @@
-# Xtext VS Code example
+# RPMN Editor (Beta)
 
 
 RPMN integration supports 

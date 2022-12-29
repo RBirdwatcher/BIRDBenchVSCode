@@ -1,6 +1,6 @@
 {
-    "name": "xtext-vscode-example",
-    "displayName": "Xtext VS Code example",
+    "name": "rpmn-editor",
+    "displayName": "RPMN Editor (Beta)",
     "description": "A simple DSL example for VS Code",
     "version": "0.0.31",
     "publisher": "BirdSoftwareSolutions",
