@@ -8,10 +8,10 @@
   "license": "EPL-1.0",
   "repository": {
     "type": "git",
-    "url": "www.birdsoftwaresolutions.com"
+    "url": "https://www.birdsoftwaresolutions.com"
   },
   "bugs": {
-    "url": "www.birdsoftwaresolutions.com"
+    "url": "https://www.birdsoftwaresolutions.com"
   },
   "engines": {
     "atom": ">=1.21.0"
