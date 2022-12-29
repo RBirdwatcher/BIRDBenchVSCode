@@ -1,8 +1,8 @@
 {
     "name": "rpmn-editor",
     "displayName": "RPMN Editor (Beta)",
-    "description": "A simple DSL example for VS Code",
-    "version": "0.0.31",
+    "description": "Regulatory Process and Modeling Notation Editor (Beta)",
+    "version": "0.9.1",
     "publisher": "BirdSoftwareSolutions",
     "icon": "images/BirdSoftwareSolutions.png",
     "license": "EPL-1.0",
