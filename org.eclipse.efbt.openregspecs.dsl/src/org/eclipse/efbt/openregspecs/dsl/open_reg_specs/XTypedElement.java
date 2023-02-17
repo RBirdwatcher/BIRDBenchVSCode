@@ -30,7 +30,7 @@ public interface XTypedElement extends XNamedElement
 	 * @return the value of the '<em>Type</em>' reference.
 	 * @see #setType(XClassifier)
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Open_reg_specsPackage#getXTypedElement_Type()
-	 * @model resolveProxies="false" unsettable="true" suppressedIsSetVisibility="true" suppressedUnsetVisibility="true"
+	 * @model unsettable="true" suppressedIsSetVisibility="true" suppressedUnsetVisibility="true"
 	 * @generated
 	 */
 	XClassifier getType();

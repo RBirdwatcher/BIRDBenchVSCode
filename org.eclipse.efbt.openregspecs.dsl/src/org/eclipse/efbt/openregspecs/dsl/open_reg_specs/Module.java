@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module#getLicense <em>License</em>}</li>
  *   <li>{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module#getVersion <em>Version</em>}</li>
+ *   <li>{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module#getImports <em>Imports</em>}</li>
  * </ul>
  *
  * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Open_reg_specsPackage#getModule()
@@ -128,5 +129,17 @@ public interface Module extends EObject
 	 * @generated
 	 */
 	void setVersion(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Imports</b></em>' containment reference list.
+	 * The list contents are of type {@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Imports</em>' containment reference list.
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Open_reg_specsPackage#getModule_Imports()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Import> getImports();
 
 } // Module

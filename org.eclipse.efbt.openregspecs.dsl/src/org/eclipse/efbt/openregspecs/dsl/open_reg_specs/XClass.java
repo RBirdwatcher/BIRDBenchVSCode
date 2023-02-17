@@ -67,7 +67,7 @@ public interface XClass extends XClassifier
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Super Types</em>' reference list.
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Open_reg_specsPackage#getXClass_SuperTypes()
-	 * @model resolveProxies="false" unsettable="true" suppressedIsSetVisibility="true" suppressedUnsetVisibility="true"
+	 * @model unsettable="true" suppressedIsSetVisibility="true" suppressedUnsetVisibility="true"
 	 * @generated
 	 */
 	EList<XClass> getSuperTypes();

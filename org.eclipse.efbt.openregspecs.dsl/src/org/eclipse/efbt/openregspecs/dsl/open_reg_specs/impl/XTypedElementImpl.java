@@ -9,6 +9,7 @@ import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.XTypedElement;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
@@ -116,6 +117,26 @@ public abstract class XTypedElementImpl extends XNamedElementImpl implements XTy
 	 */
 	public XClassifier getType()
 	{
+		if (type != null && type.eIsProxy())
+		{
+			InternalEObject oldType = (InternalEObject)type;
+			type = (XClassifier)eResolveProxy(oldType);
+			if (type != oldType)
+			{
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Open_reg_specsPackage.XTYPED_ELEMENT__TYPE, oldType, type));
+			}
+		}
+		return type;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XClassifier basicGetType()
+	{
 		return type;
 	}
 
@@ -216,7 +237,8 @@ public abstract class XTypedElementImpl extends XNamedElementImpl implements XTy
 		switch (featureID)
 		{
 			case Open_reg_specsPackage.XTYPED_ELEMENT__TYPE:
-				return getType();
+				if (resolve) return getType();
+				return basicGetType();
 			case Open_reg_specsPackage.XTYPED_ELEMENT__UPPER_BOUND:
 				return getUpperBound();
 			case Open_reg_specsPackage.XTYPED_ELEMENT__LOWER_BOUND:

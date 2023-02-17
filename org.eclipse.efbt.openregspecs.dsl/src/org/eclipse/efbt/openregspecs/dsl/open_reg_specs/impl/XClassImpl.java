@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
-import org.eclipse.emf.ecore.util.EObjectEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -146,7 +146,7 @@ public class XClassImpl extends XClassifierImpl implements XClass
 	{
 		if (superTypes == null)
 		{
-			superTypes = new EObjectEList.Unsettable<XClass>(XClass.class, this, Open_reg_specsPackage.XCLASS__SUPER_TYPES);
+			superTypes = new EObjectResolvingEList.Unsettable<XClass>(XClass.class, this, Open_reg_specsPackage.XCLASS__SUPER_TYPES);
 		}
 		return superTypes;
 	}

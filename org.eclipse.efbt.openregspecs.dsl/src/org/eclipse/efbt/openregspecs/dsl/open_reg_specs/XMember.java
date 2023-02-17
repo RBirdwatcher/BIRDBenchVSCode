@@ -29,7 +29,7 @@ public interface XMember extends XTypedElement
 	 * @return the value of the '<em>Containing Class</em>' container reference.
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Open_reg_specsPackage#getXMember_ContainingClass()
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.XClass#getMembers
-	 * @model opposite="members" resolveProxies="false" changeable="false"
+	 * @model opposite="members" changeable="false"
 	 * @generated
 	 */
 	XClass getContainingClass();

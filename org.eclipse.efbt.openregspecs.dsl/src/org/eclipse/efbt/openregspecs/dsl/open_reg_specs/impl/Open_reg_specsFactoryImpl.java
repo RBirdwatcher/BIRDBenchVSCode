@@ -10,6 +10,7 @@ import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.DataConstraint;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.E2ETestScope;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.EntityToVTLIntermediateLayerLink;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.ExclusiveGateway;
+import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.InclusiveGateway;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.InputFile;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.LayerSQL;
@@ -29,6 +30,7 @@ import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectClause;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectColumn;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectColumnAttributeAs;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectColumnMemberAs;
+import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectValueAs;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectionLayer;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SequenceFlow;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.ServiceTask;
@@ -134,6 +136,7 @@ public class Open_reg_specsFactoryImpl extends EFactoryImpl implements Open_reg_
 			case Open_reg_specsPackage.SUB_PROCESS: return createSubProcess();
 			case Open_reg_specsPackage.SCRIPT_TASK: return createScriptTask();
 			case Open_reg_specsPackage.USER_TASK: return createUserTask();
+			case Open_reg_specsPackage.IMPORT: return createImport();
 			case Open_reg_specsPackage.MODULE: return createModule();
 			case Open_reg_specsPackage.MODULE_LIST: return createModuleList();
 			case Open_reg_specsPackage.ALLOWED_TYPES: return createAllowedTypes();
@@ -150,6 +153,7 @@ public class Open_reg_specsFactoryImpl extends EFactoryImpl implements Open_reg_
 			case Open_reg_specsPackage.SELECT_CLAUSE: return createSelectClause();
 			case Open_reg_specsPackage.SELECT_COLUMN: return createSelectColumn();
 			case Open_reg_specsPackage.SELECT_COLUMN_MEMBER_AS: return createSelectColumnMemberAs();
+			case Open_reg_specsPackage.SELECT_VALUE_AS: return createSelectValueAs();
 			case Open_reg_specsPackage.SELECT_COLUMN_ATTRIBUTE_AS: return createSelectColumnAttributeAs();
 			case Open_reg_specsPackage.WHERE_CLAUSE: return createWhereClause();
 			case Open_reg_specsPackage.VIEW_MODULE: return createViewModule();
@@ -330,6 +334,17 @@ public class Open_reg_specsFactoryImpl extends EFactoryImpl implements Open_reg_
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Import createImport()
+	{
+		ImportImpl import_ = new ImportImpl();
+		return import_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module createModule()
 	{
 		ModuleImpl module = new ModuleImpl();
@@ -499,6 +514,17 @@ public class Open_reg_specsFactoryImpl extends EFactoryImpl implements Open_reg_
 	{
 		SelectColumnMemberAsImpl selectColumnMemberAs = new SelectColumnMemberAsImpl();
 		return selectColumnMemberAs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SelectValueAs createSelectValueAs()
+	{
+		SelectValueAsImpl selectValueAs = new SelectValueAsImpl();
+		return selectValueAs;
 	}
 
 	/**

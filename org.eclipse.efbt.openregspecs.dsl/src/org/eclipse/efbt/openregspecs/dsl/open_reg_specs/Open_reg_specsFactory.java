@@ -104,6 +104,15 @@ public interface Open_reg_specsFactory extends EFactory
 	UserTask createUserTask();
 
 	/**
+	 * Returns a new object of class '<em>Import</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Import</em>'.
+	 * @generated
+	 */
+	Import createImport();
+
+	/**
 	 * Returns a new object of class '<em>Module</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -246,6 +255,15 @@ public interface Open_reg_specsFactory extends EFactory
 	 * @generated
 	 */
 	SelectColumnMemberAs createSelectColumnMemberAs();
+
+	/**
+	 * Returns a new object of class '<em>Select Value As</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Select Value As</em>'.
+	 * @generated
+	 */
+	SelectValueAs createSelectValueAs();
 
 	/**
 	 * Returns a new object of class '<em>Select Column Attribute As</em>'.

@@ -4,18 +4,23 @@ package org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl;
 
 import java.util.Collection;
 
+import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Open_reg_specsPackage;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,6 +35,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  *   <li>{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.ModuleImpl#getLicense <em>License</em>}</li>
  *   <li>{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.ModuleImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.ModuleImpl#getVersion <em>Version</em>}</li>
+ *   <li>{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.ModuleImpl#getImports <em>Imports</em>}</li>
  * </ul>
  *
  * @generated
@@ -125,6 +131,16 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements org.ecli
 	 * @ordered
 	 */
 	protected String version = VERSION_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getImports() <em>Imports</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getImports()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Import> imports;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -258,6 +274,36 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements org.ecli
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Import> getImports()
+	{
+		if (imports == null)
+		{
+			imports = new EObjectContainmentEList<Import>(Import.class, this, Open_reg_specsPackage.MODULE__IMPORTS);
+		}
+		return imports;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+	{
+		switch (featureID)
+		{
+			case Open_reg_specsPackage.MODULE__IMPORTS:
+				return ((InternalEList<?>)getImports()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType)
 	{
@@ -273,6 +319,8 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements org.ecli
 				return getName();
 			case Open_reg_specsPackage.MODULE__VERSION:
 				return getVersion();
+			case Open_reg_specsPackage.MODULE__IMPORTS:
+				return getImports();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -304,6 +352,10 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements org.ecli
 			case Open_reg_specsPackage.MODULE__VERSION:
 				setVersion((String)newValue);
 				return;
+			case Open_reg_specsPackage.MODULE__IMPORTS:
+				getImports().clear();
+				getImports().addAll((Collection<? extends Import>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -333,6 +385,9 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements org.ecli
 			case Open_reg_specsPackage.MODULE__VERSION:
 				setVersion(VERSION_EDEFAULT);
 				return;
+			case Open_reg_specsPackage.MODULE__IMPORTS:
+				getImports().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -357,6 +412,8 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements org.ecli
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case Open_reg_specsPackage.MODULE__VERSION:
 				return VERSION_EDEFAULT == null ? version != null : !VERSION_EDEFAULT.equals(version);
+			case Open_reg_specsPackage.MODULE__IMPORTS:
+				return imports != null && !imports.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

@@ -55,6 +55,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="UserTask" eSuperTypes="#//Task">
     <eStructuralFeatures xsi:type="ecore:EReference" name="entity" eType="#//XClass"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Import">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="importedNamespace" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Module">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Module"/>
@@ -92,6 +95,8 @@
         <details key="name" value="version"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="imports" upperBound="-1"
+        eType="#//Import" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ModuleList">
     <eStructuralFeatures xsi:type="ecore:EReference" name="modules" upperBound="-1"
@@ -276,6 +281,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="SelectColumnMemberAs" eSuperTypes="#//SelectColumn">
     <eStructuralFeatures xsi:type="ecore:EReference" name="memberAsConstant" eType="#//XEnumLiteral"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SelectValueAs" eSuperTypes="#//SelectColumn">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SelectColumnAttributeAs" eSuperTypes="#//SelectColumn">
     <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" eType="#//XMember"/>
   </eClassifiers>
@@ -388,9 +396,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="XClass" eSuperTypes="#//XClassifier">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="abstract" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="members" upperBound="-1"
-        eType="#//XMember" containment="true" resolveProxies="false" eOpposite="#//XMember/containingClass"/>
+        eType="#//XMember" containment="true" eOpposite="#//XMember/containingClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="superTypes" upperBound="-1"
-        eType="#//XClass" unsettable="true" resolveProxies="false"/>
+        eType="#//XClass" unsettable="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="XClassifier" abstract="true" eSuperTypes="#//XNamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="package" eType="#//XPackage"
@@ -401,7 +409,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="XEnum" eSuperTypes="#//XDataType">
     <eStructuralFeatures xsi:type="ecore:EReference" name="literals" upperBound="-1"
-        eType="#//XEnumLiteral" containment="true" resolveProxies="false" eOpposite="#//XEnumLiteral/enum"/>
+        eType="#//XEnumLiteral" containment="true" eOpposite="#//XEnumLiteral/enum"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="XEnumLiteral" eSuperTypes="#//XNamedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -411,7 +419,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="XMember" abstract="true" eSuperTypes="#//XTypedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="containingClass" eType="#//XClass"
-        changeable="false" transient="true" resolveProxies="false" eOpposite="#//XClass/members"/>
+        changeable="false" transient="true" eOpposite="#//XClass/members"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="XModelElement" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="XNamedElement" abstract="true" eSuperTypes="#//XModelElement">
@@ -431,7 +439,7 @@
       eSuperTypes="#//XMember"/>
   <eClassifiers xsi:type="ecore:EClass" name="XTypedElement" abstract="true" eSuperTypes="#//XNamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//XClassifier"
-        unsettable="true" resolveProxies="false"/>
+        unsettable="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="upperBound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
         defaultValueLiteral="1"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="lowerBound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>

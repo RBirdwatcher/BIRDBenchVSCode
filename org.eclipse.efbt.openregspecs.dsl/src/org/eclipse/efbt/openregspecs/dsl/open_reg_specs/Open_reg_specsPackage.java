@@ -1316,6 +1316,43 @@ public interface Open_reg_specsPackage extends EPackage
 	int USER_TASK_OPERATION_COUNT = TASK_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.ImportImpl <em>Import</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.ImportImpl
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getImport()
+	 * @generated
+	 */
+	int IMPORT = 15;
+
+	/**
+	 * The feature id for the '<em><b>Imported Namespace</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORT__IMPORTED_NAMESPACE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Import</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORT_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Import</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.ModuleImpl <em>Module</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1323,7 +1360,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getModule()
 	 * @generated
 	 */
-	int MODULE = 15;
+	int MODULE = 16;
 
 	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' reference list.
@@ -1371,13 +1408,22 @@ public interface Open_reg_specsPackage extends EPackage
 	int MODULE__VERSION = 4;
 
 	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODULE__IMPORTS = 5;
+
+	/**
 	 * The number of structural features of the '<em>Module</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODULE_FEATURE_COUNT = 5;
+	int MODULE_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Module</em>' class.
@@ -1396,7 +1442,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getModuleList()
 	 * @generated
 	 */
-	int MODULE_LIST = 16;
+	int MODULE_LIST = 17;
 
 	/**
 	 * The feature id for the '<em><b>Modules</b></em>' containment reference list.
@@ -1433,7 +1479,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getAllowedTypes()
 	 * @generated
 	 */
-	int ALLOWED_TYPES = 17;
+	int ALLOWED_TYPES = 18;
 
 	/**
 	 * The feature id for the '<em><b>Allowed Types</b></em>' containment reference list.
@@ -1470,7 +1516,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getRequirementsModule()
 	 * @generated
 	 */
-	int REQUIREMENTS_MODULE = 18;
+	int REQUIREMENTS_MODULE = 19;
 
 	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' reference list.
@@ -1518,6 +1564,15 @@ public interface Open_reg_specsPackage extends EPackage
 	int REQUIREMENTS_MODULE__VERSION = MODULE__VERSION;
 
 	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIREMENTS_MODULE__IMPORTS = MODULE__IMPORTS;
+
+	/**
 	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1561,7 +1616,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getRequirementsSection()
 	 * @generated
 	 */
-	int REQUIREMENTS_SECTION = 19;
+	int REQUIREMENTS_SECTION = 20;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1598,7 +1653,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getRequirementsSectionImage()
 	 * @generated
 	 */
-	int REQUIREMENTS_SECTION_IMAGE = 20;
+	int REQUIREMENTS_SECTION_IMAGE = 21;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1653,7 +1708,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getRequirementsSectionLinkWithText()
 	 * @generated
 	 */
-	int REQUIREMENTS_SECTION_LINK_WITH_TEXT = 21;
+	int REQUIREMENTS_SECTION_LINK_WITH_TEXT = 22;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1717,7 +1772,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getRequirementsSectionText()
 	 * @generated
 	 */
-	int REQUIREMENTS_SECTION_TEXT = 22;
+	int REQUIREMENTS_SECTION_TEXT = 23;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1763,7 +1818,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getRequirementType()
 	 * @generated
 	 */
-	int REQUIREMENT_TYPE = 23;
+	int REQUIREMENT_TYPE = 24;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1800,7 +1855,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getTitledRequirementsSection()
 	 * @generated
 	 */
-	int TITLED_REQUIREMENTS_SECTION = 24;
+	int TITLED_REQUIREMENTS_SECTION = 25;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1873,7 +1928,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getTag()
 	 * @generated
 	 */
-	int TAG = 25;
+	int TAG = 26;
 
 	/**
 	 * The feature id for the '<em><b>Display Name</b></em>' attribute.
@@ -1928,7 +1983,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getTagGroup()
 	 * @generated
 	 */
-	int TAG_GROUP = 26;
+	int TAG_GROUP = 27;
 
 	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' reference list.
@@ -1976,6 +2031,15 @@ public interface Open_reg_specsPackage extends EPackage
 	int TAG_GROUP__VERSION = MODULE__VERSION;
 
 	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TAG_GROUP__IMPORTS = MODULE__IMPORTS;
+
+	/**
 	 * The feature id for the '<em><b>Tags</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2010,7 +2074,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getView()
 	 * @generated
 	 */
-	int VIEW = 27;
+	int VIEW = 28;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2065,7 +2129,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getLayerSQL()
 	 * @generated
 	 */
-	int LAYER_SQL = 28;
+	int LAYER_SQL = 29;
 
 	/**
 	 * The feature id for the '<em><b>Selection Layer</b></em>' reference.
@@ -2120,7 +2184,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getSelectClause()
 	 * @generated
 	 */
-	int SELECT_CLAUSE = 29;
+	int SELECT_CLAUSE = 30;
 
 	/**
 	 * The number of structural features of the '<em>Select Clause</em>' class.
@@ -2148,7 +2212,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getSelectColumn()
 	 * @generated
 	 */
-	int SELECT_COLUMN = 30;
+	int SELECT_COLUMN = 31;
 
 	/**
 	 * The feature id for the '<em><b>As Attribute</b></em>' reference.
@@ -2185,7 +2249,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getSelectColumnMemberAs()
 	 * @generated
 	 */
-	int SELECT_COLUMN_MEMBER_AS = 31;
+	int SELECT_COLUMN_MEMBER_AS = 32;
 
 	/**
 	 * The feature id for the '<em><b>As Attribute</b></em>' reference.
@@ -2224,6 +2288,52 @@ public interface Open_reg_specsPackage extends EPackage
 	int SELECT_COLUMN_MEMBER_AS_OPERATION_COUNT = SELECT_COLUMN_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.SelectValueAsImpl <em>Select Value As</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.SelectValueAsImpl
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getSelectValueAs()
+	 * @generated
+	 */
+	int SELECT_VALUE_AS = 33;
+
+	/**
+	 * The feature id for the '<em><b>As Attribute</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECT_VALUE_AS__AS_ATTRIBUTE = SELECT_COLUMN__AS_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECT_VALUE_AS__VALUE = SELECT_COLUMN_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Select Value As</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECT_VALUE_AS_FEATURE_COUNT = SELECT_COLUMN_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Select Value As</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECT_VALUE_AS_OPERATION_COUNT = SELECT_COLUMN_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.SelectColumnAttributeAsImpl <em>Select Column Attribute As</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2231,7 +2341,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getSelectColumnAttributeAs()
 	 * @generated
 	 */
-	int SELECT_COLUMN_ATTRIBUTE_AS = 32;
+	int SELECT_COLUMN_ATTRIBUTE_AS = 34;
 
 	/**
 	 * The feature id for the '<em><b>As Attribute</b></em>' reference.
@@ -2277,7 +2387,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getWhereClause()
 	 * @generated
 	 */
-	int WHERE_CLAUSE = 33;
+	int WHERE_CLAUSE = 35;
 
 	/**
 	 * The feature id for the '<em><b>Attribute1</b></em>' reference.
@@ -2341,7 +2451,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getViewModule()
 	 * @generated
 	 */
-	int VIEW_MODULE = 34;
+	int VIEW_MODULE = 36;
 
 	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' reference list.
@@ -2389,6 +2499,15 @@ public interface Open_reg_specsPackage extends EPackage
 	int VIEW_MODULE__VERSION = MODULE__VERSION;
 
 	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_MODULE__IMPORTS = MODULE__IMPORTS;
+
+	/**
 	 * The feature id for the '<em><b>Views</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2423,7 +2542,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getActivityTag()
 	 * @generated
 	 */
-	int ACTIVITY_TAG = 35;
+	int ACTIVITY_TAG = 37;
 
 	/**
 	 * The feature id for the '<em><b>Display Name</b></em>' attribute.
@@ -2487,7 +2606,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getScenario()
 	 * @generated
 	 */
-	int SCENARIO = 36;
+	int SCENARIO = 38;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2560,7 +2679,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getScenarioTag()
 	 * @generated
 	 */
-	int SCENARIO_TAG = 37;
+	int SCENARIO_TAG = 39;
 
 	/**
 	 * The feature id for the '<em><b>Display Name</b></em>' attribute.
@@ -2624,7 +2743,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getTest()
 	 * @generated
 	 */
-	int TEST = 38;
+	int TEST = 40;
 
 	/**
 	 * The feature id for the '<em><b>Input Data</b></em>' containment reference list.
@@ -2688,7 +2807,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getTestModule()
 	 * @generated
 	 */
-	int TEST_MODULE = 39;
+	int TEST_MODULE = 41;
 
 	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' reference list.
@@ -2736,6 +2855,15 @@ public interface Open_reg_specsPackage extends EPackage
 	int TEST_MODULE__VERSION = MODULE__VERSION;
 
 	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_MODULE__IMPORTS = MODULE__IMPORTS;
+
+	/**
 	 * The feature id for the '<em><b>Tests</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2770,7 +2898,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getDataConstraint()
 	 * @generated
 	 */
-	int DATA_CONSTRAINT = 40;
+	int DATA_CONSTRAINT = 42;
 
 	/**
 	 * The feature id for the '<em><b>Attr1</b></em>' reference.
@@ -2834,7 +2962,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getSelectionLayer()
 	 * @generated
 	 */
-	int SELECTION_LAYER = 41;
+	int SELECTION_LAYER = 43;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2889,7 +3017,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getTestScope()
 	 * @generated
 	 */
-	int TEST_SCOPE = 42;
+	int TEST_SCOPE = 44;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2926,7 +3054,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getUnitTestScope()
 	 * @generated
 	 */
-	int UNIT_TEST_SCOPE = 43;
+	int UNIT_TEST_SCOPE = 45;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2972,7 +3100,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getE2ETestScope()
 	 * @generated
 	 */
-	int E2E_TEST_SCOPE = 44;
+	int E2E_TEST_SCOPE = 46;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3036,7 +3164,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getInputFile()
 	 * @generated
 	 */
-	int INPUT_FILE = 45;
+	int INPUT_FILE = 47;
 
 	/**
 	 * The feature id for the '<em><b>File Name</b></em>' attribute.
@@ -3082,7 +3210,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getWorkflowModule()
 	 * @generated
 	 */
-	int WORKFLOW_MODULE = 46;
+	int WORKFLOW_MODULE = 48;
 
 	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' reference list.
@@ -3128,6 +3256,15 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @ordered
 	 */
 	int WORKFLOW_MODULE__VERSION = MODULE__VERSION;
+
+	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKFLOW_MODULE__IMPORTS = MODULE__IMPORTS;
 
 	/**
 	 * The feature id for the '<em><b>Task Tags</b></em>' containment reference list.
@@ -3182,7 +3319,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXModelElement()
 	 * @generated
 	 */
-	int XMODEL_ELEMENT = 54;
+	int XMODEL_ELEMENT = 56;
 
 	/**
 	 * The number of structural features of the '<em>XModel Element</em>' class.
@@ -3210,7 +3347,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXNamedElement()
 	 * @generated
 	 */
-	int XNAMED_ELEMENT = 55;
+	int XNAMED_ELEMENT = 57;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3247,7 +3384,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXTypedElement()
 	 * @generated
 	 */
-	int XTYPED_ELEMENT = 60;
+	int XTYPED_ELEMENT = 62;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3311,7 +3448,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXMember()
 	 * @generated
 	 */
-	int XMEMBER = 53;
+	int XMEMBER = 55;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3384,7 +3521,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXStructuralFeature()
 	 * @generated
 	 */
-	int XSTRUCTURAL_FEATURE = 59;
+	int XSTRUCTURAL_FEATURE = 61;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3457,7 +3594,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXAttribute()
 	 * @generated
 	 */
-	int XATTRIBUTE = 47;
+	int XATTRIBUTE = 49;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3548,7 +3685,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXClassifier()
 	 * @generated
 	 */
-	int XCLASSIFIER = 49;
+	int XCLASSIFIER = 51;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3594,7 +3731,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXClass()
 	 * @generated
 	 */
-	int XCLASS = 48;
+	int XCLASS = 50;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3667,7 +3804,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXDataType()
 	 * @generated
 	 */
-	int XDATA_TYPE = 50;
+	int XDATA_TYPE = 52;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3722,7 +3859,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXEnum()
 	 * @generated
 	 */
-	int XENUM = 51;
+	int XENUM = 53;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3786,7 +3923,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXEnumLiteral()
 	 * @generated
 	 */
-	int XENUM_LITERAL = 52;
+	int XENUM_LITERAL = 54;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3850,7 +3987,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXOperation()
 	 * @generated
 	 */
-	int XOPERATION = 56;
+	int XOPERATION = 58;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3932,7 +4069,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXPackage()
 	 * @generated
 	 */
-	int XPACKAGE = 57;
+	int XPACKAGE = 59;
 
 	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' reference list.
@@ -3980,6 +4117,15 @@ public interface Open_reg_specsPackage extends EPackage
 	int XPACKAGE__VERSION = MODULE__VERSION;
 
 	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XPACKAGE__IMPORTS = MODULE__IMPORTS;
+
+	/**
 	 * The feature id for the '<em><b>Classifiers</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4014,7 +4160,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getXReference()
 	 * @generated
 	 */
-	int XREFERENCE = 58;
+	int XREFERENCE = 60;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -4096,7 +4242,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getVTLEnrichedCube()
 	 * @generated
 	 */
-	int VTL_ENRICHED_CUBE = 61;
+	int VTL_ENRICHED_CUBE = 63;
 
 	/**
 	 * The feature id for the '<em><b>Transformations</b></em>' reference list.
@@ -4133,7 +4279,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getVTLGeneratedOutputlayer()
 	 * @generated
 	 */
-	int VTL_GENERATED_OUTPUTLAYER = 62;
+	int VTL_GENERATED_OUTPUTLAYER = 64;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -4197,7 +4343,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getVTLForOutputLayerAndIntermediateLayerCombination()
 	 * @generated
 	 */
-	int VTL_FOR_OUTPUT_LAYER_AND_INTERMEDIATE_LAYER_COMBINATION = 63;
+	int VTL_FOR_OUTPUT_LAYER_AND_INTERMEDIATE_LAYER_COMBINATION = 65;
 
 	/**
 	 * The feature id for the '<em><b>Transformations</b></em>' reference list.
@@ -4252,7 +4398,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getVTLGeneratedIntermediateLayer()
 	 * @generated
 	 */
-	int VTL_GENERATED_INTERMEDIATE_LAYER = 64;
+	int VTL_GENERATED_INTERMEDIATE_LAYER = 66;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -4307,7 +4453,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getVTLTransformation()
 	 * @generated
 	 */
-	int VTL_TRANSFORMATION = 65;
+	int VTL_TRANSFORMATION = 67;
 
 	/**
 	 * The feature id for the '<em><b>Expression</b></em>' attribute.
@@ -4371,7 +4517,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getVTLScheme()
 	 * @generated
 	 */
-	int VTL_SCHEME = 66;
+	int VTL_SCHEME = 68;
 
 	/**
 	 * The feature id for the '<em><b>Expressions</b></em>' containment reference list.
@@ -4417,7 +4563,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getVTLForSelectionLayer()
 	 * @generated
 	 */
-	int VTL_FOR_SELECTION_LAYER = 67;
+	int VTL_FOR_SELECTION_LAYER = 69;
 
 	/**
 	 * The feature id for the '<em><b>Selection Layer</b></em>' reference.
@@ -4472,7 +4618,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getVTLModule()
 	 * @generated
 	 */
-	int VTL_MODULE = 68;
+	int VTL_MODULE = 70;
 
 	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' reference list.
@@ -4518,6 +4664,15 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @ordered
 	 */
 	int VTL_MODULE__VERSION = MODULE__VERSION;
+
+	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VTL_MODULE__IMPORTS = MODULE__IMPORTS;
 
 	/**
 	 * The feature id for the '<em><b>VTL Schemes</b></em>' containment reference list.
@@ -4608,7 +4763,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getEntityToVTLIntermediateLayerLink()
 	 * @generated
 	 */
-	int ENTITY_TO_VTL_INTERMEDIATE_LAYER_LINK = 69;
+	int ENTITY_TO_VTL_INTERMEDIATE_LAYER_LINK = 71;
 
 	/**
 	 * The feature id for the '<em><b>VTL Intermediate Layer</b></em>' reference.
@@ -4663,7 +4818,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getVTLForView()
 	 * @generated
 	 */
-	int VTL_FOR_VIEW = 70;
+	int VTL_FOR_VIEW = 72;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -4718,7 +4873,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getComparitor()
 	 * @generated
 	 */
-	int COMPARITOR = 71;
+	int COMPARITOR = 73;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.AttrComparison <em>Attr Comparison</em>}' enum.
@@ -4728,7 +4883,7 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.impl.Open_reg_specsPackageImpl#getAttrComparison()
 	 * @generated
 	 */
-	int ATTR_COMPARISON = 72;
+	int ATTR_COMPARISON = 74;
 
 
 	/**
@@ -5080,6 +5235,27 @@ public interface Open_reg_specsPackage extends EPackage
 	EReference getUserTask_Entity();
 
 	/**
+	 * Returns the meta object for class '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import <em>Import</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Import</em>'.
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import
+	 * @generated
+	 */
+	EClass getImport();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import#getImportedNamespace <em>Imported Namespace</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Imported Namespace</em>'.
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import#getImportedNamespace()
+	 * @see #getImport()
+	 * @generated
+	 */
+	EAttribute getImport_ImportedNamespace();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module <em>Module</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5143,6 +5319,17 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getModule_Version();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module#getImports <em>Imports</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Imports</em>'.
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module#getImports()
+	 * @see #getModule()
+	 * @generated
+	 */
+	EReference getModule_Imports();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.ModuleList <em>Module List</em>}'.
@@ -5611,6 +5798,27 @@ public interface Open_reg_specsPackage extends EPackage
 	 * @generated
 	 */
 	EReference getSelectColumnMemberAs_MemberAsConstant();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectValueAs <em>Select Value As</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Select Value As</em>'.
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectValueAs
+	 * @generated
+	 */
+	EClass getSelectValueAs();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectValueAs#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectValueAs#getValue()
+	 * @see #getSelectValueAs()
+	 * @generated
+	 */
+	EAttribute getSelectValueAs_Value();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectColumnAttributeAs <em>Select Column Attribute As</em>}'.

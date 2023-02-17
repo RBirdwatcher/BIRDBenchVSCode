@@ -14,6 +14,7 @@ import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.FlowElement;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.FlowElementsContainer;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.FlowNode;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Gateway;
+import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.InclusiveGateway;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.InputFile;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.LayerSQL;
@@ -33,6 +34,7 @@ import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectClause;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectColumn;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectColumnAttributeAs;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectColumnMemberAs;
+import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectValueAs;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectionLayer;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SequenceFlow;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.ServiceTask;
@@ -220,6 +222,11 @@ public class Open_reg_specsAdapterFactory extends AdapterFactoryImpl
 				return createUserTaskAdapter();
 			}
 			@Override
+			public Adapter caseImport(Import object)
+			{
+				return createImportAdapter();
+			}
+			@Override
 			public Adapter caseModule(org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module object)
 			{
 				return createModuleAdapter();
@@ -303,6 +310,11 @@ public class Open_reg_specsAdapterFactory extends AdapterFactoryImpl
 			public Adapter caseSelectColumnMemberAs(SelectColumnMemberAs object)
 			{
 				return createSelectColumnMemberAsAdapter();
+			}
+			@Override
+			public Adapter caseSelectValueAs(SelectValueAs object)
+			{
+				return createSelectValueAsAdapter();
 			}
 			@Override
 			public Adapter caseSelectColumnAttributeAs(SelectColumnAttributeAs object)
@@ -747,6 +759,21 @@ public class Open_reg_specsAdapterFactory extends AdapterFactoryImpl
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import <em>Import</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import
+	 * @generated
+	 */
+	public Adapter createImportAdapter()
+	{
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module <em>Module</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -997,6 +1024,21 @@ public class Open_reg_specsAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	public Adapter createSelectColumnMemberAsAdapter()
+	{
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectValueAs <em>Select Value As</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectValueAs
+	 * @generated
+	 */
+	public Adapter createSelectValueAsAdapter()
 	{
 		return null;
 	}

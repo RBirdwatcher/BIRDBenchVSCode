@@ -14,6 +14,7 @@ import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.FlowElement;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.FlowElementsContainer;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.FlowNode;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Gateway;
+import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Import;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.InclusiveGateway;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.InputFile;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.LayerSQL;
@@ -33,6 +34,7 @@ import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectClause;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectColumn;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectColumnAttributeAs;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectColumnMemberAs;
+import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectValueAs;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SelectionLayer;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.SequenceFlow;
 import org.eclipse.efbt.openregspecs.dsl.open_reg_specs.ServiceTask;
@@ -295,6 +297,13 @@ public class Open_reg_specsSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Open_reg_specsPackage.IMPORT:
+			{
+				Import import_ = (Import)theEObject;
+				T result = caseImport(import_);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Open_reg_specsPackage.MODULE:
 			{
 				org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module module = (org.eclipse.efbt.openregspecs.dsl.open_reg_specs.Module)theEObject;
@@ -418,6 +427,14 @@ public class Open_reg_specsSwitch<T> extends Switch<T>
 				SelectColumnMemberAs selectColumnMemberAs = (SelectColumnMemberAs)theEObject;
 				T result = caseSelectColumnMemberAs(selectColumnMemberAs);
 				if (result == null) result = caseSelectColumn(selectColumnMemberAs);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Open_reg_specsPackage.SELECT_VALUE_AS:
+			{
+				SelectValueAs selectValueAs = (SelectValueAs)theEObject;
+				T result = caseSelectValueAs(selectValueAs);
+				if (result == null) result = caseSelectColumn(selectValueAs);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -987,6 +1004,22 @@ public class Open_reg_specsSwitch<T> extends Switch<T>
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Import</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Import</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImport(Import object)
+	{
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Module</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1254,6 +1287,22 @@ public class Open_reg_specsSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	public T caseSelectColumnMemberAs(SelectColumnMemberAs object)
+	{
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Select Value As</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Select Value As</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSelectValueAs(SelectValueAs object)
 	{
 		return null;
 	}

@@ -150,6 +150,13 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass importEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass moduleEClass = null;
 
 	/**
@@ -263,6 +270,13 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	 * @generated
 	 */
 	private EClass selectColumnMemberAsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass selectValueAsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1007,11 +1021,35 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getImport()
+	{
+		if (importEClass == null)
+		{
+			importEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(15);
+		}
+		return importEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getImport_ImportedNamespace()
+	{
+        return (EAttribute)getImport().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getModule()
 	{
 		if (moduleEClass == null)
 		{
-			moduleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(15);
+			moduleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(16);
 		}
 		return moduleEClass;
 	}
@@ -1071,11 +1109,21 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getModule_Imports()
+	{
+        return (EReference)getModule().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getModuleList()
 	{
 		if (moduleListEClass == null)
 		{
-			moduleListEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(16);
+			moduleListEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(17);
 		}
 		return moduleListEClass;
 	}
@@ -1099,7 +1147,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (allowedTypesEClass == null)
 		{
-			allowedTypesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(17);
+			allowedTypesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(18);
 		}
 		return allowedTypesEClass;
 	}
@@ -1123,7 +1171,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (requirementsModuleEClass == null)
 		{
-			requirementsModuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(18);
+			requirementsModuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(19);
 		}
 		return requirementsModuleEClass;
 	}
@@ -1157,7 +1205,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (requirementsSectionEClass == null)
 		{
-			requirementsSectionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(19);
+			requirementsSectionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(20);
 		}
 		return requirementsSectionEClass;
 	}
@@ -1181,7 +1229,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (requirementsSectionImageEClass == null)
 		{
-			requirementsSectionImageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(20);
+			requirementsSectionImageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(21);
 		}
 		return requirementsSectionImageEClass;
 	}
@@ -1215,7 +1263,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (requirementsSectionLinkWithTextEClass == null)
 		{
-			requirementsSectionLinkWithTextEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(21);
+			requirementsSectionLinkWithTextEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(22);
 		}
 		return requirementsSectionLinkWithTextEClass;
 	}
@@ -1259,7 +1307,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (requirementsSectionTextEClass == null)
 		{
-			requirementsSectionTextEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(22);
+			requirementsSectionTextEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(23);
 		}
 		return requirementsSectionTextEClass;
 	}
@@ -1283,7 +1331,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (requirementTypeEClass == null)
 		{
-			requirementTypeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(23);
+			requirementTypeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(24);
 		}
 		return requirementTypeEClass;
 	}
@@ -1307,7 +1355,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (titledRequirementsSectionEClass == null)
 		{
-			titledRequirementsSectionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(24);
+			titledRequirementsSectionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(25);
 		}
 		return titledRequirementsSectionEClass;
 	}
@@ -1361,7 +1409,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (tagEClass == null)
 		{
-			tagEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(25);
+			tagEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(26);
 		}
 		return tagEClass;
 	}
@@ -1405,7 +1453,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (tagGroupEClass == null)
 		{
-			tagGroupEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(26);
+			tagGroupEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(27);
 		}
 		return tagGroupEClass;
 	}
@@ -1429,7 +1477,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (viewEClass == null)
 		{
-			viewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(27);
+			viewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(28);
 		}
 		return viewEClass;
 	}
@@ -1473,7 +1521,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (layerSQLEClass == null)
 		{
-			layerSQLEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(28);
+			layerSQLEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(29);
 		}
 		return layerSQLEClass;
 	}
@@ -1517,7 +1565,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (selectClauseEClass == null)
 		{
-			selectClauseEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(29);
+			selectClauseEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(30);
 		}
 		return selectClauseEClass;
 	}
@@ -1531,7 +1579,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (selectColumnEClass == null)
 		{
-			selectColumnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(30);
+			selectColumnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(31);
 		}
 		return selectColumnEClass;
 	}
@@ -1555,7 +1603,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (selectColumnMemberAsEClass == null)
 		{
-			selectColumnMemberAsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(31);
+			selectColumnMemberAsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(32);
 		}
 		return selectColumnMemberAsEClass;
 	}
@@ -1575,11 +1623,35 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getSelectValueAs()
+	{
+		if (selectValueAsEClass == null)
+		{
+			selectValueAsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(33);
+		}
+		return selectValueAsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSelectValueAs_Value()
+	{
+        return (EAttribute)getSelectValueAs().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getSelectColumnAttributeAs()
 	{
 		if (selectColumnAttributeAsEClass == null)
 		{
-			selectColumnAttributeAsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(32);
+			selectColumnAttributeAsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(34);
 		}
 		return selectColumnAttributeAsEClass;
 	}
@@ -1603,7 +1675,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (whereClauseEClass == null)
 		{
-			whereClauseEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(34);
+			whereClauseEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(36);
 		}
 		return whereClauseEClass;
 	}
@@ -1657,7 +1729,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (viewModuleEClass == null)
 		{
-			viewModuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(35);
+			viewModuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(37);
 		}
 		return viewModuleEClass;
 	}
@@ -1681,7 +1753,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (activityTagEClass == null)
 		{
-			activityTagEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(36);
+			activityTagEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(38);
 		}
 		return activityTagEClass;
 	}
@@ -1705,7 +1777,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (scenarioEClass == null)
 		{
-			scenarioEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(37);
+			scenarioEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(39);
 		}
 		return scenarioEClass;
 	}
@@ -1769,7 +1841,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (scenarioTagEClass == null)
 		{
-			scenarioTagEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(38);
+			scenarioTagEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(40);
 		}
 		return scenarioTagEClass;
 	}
@@ -1793,7 +1865,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (testEClass == null)
 		{
-			testEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(39);
+			testEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(41);
 		}
 		return testEClass;
 	}
@@ -1847,7 +1919,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (testModuleEClass == null)
 		{
-			testModuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(40);
+			testModuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(42);
 		}
 		return testModuleEClass;
 	}
@@ -1871,7 +1943,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (dataConstraintEClass == null)
 		{
-			dataConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(41);
+			dataConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(43);
 		}
 		return dataConstraintEClass;
 	}
@@ -1925,7 +1997,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (selectionLayerEClass == null)
 		{
-			selectionLayerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(43);
+			selectionLayerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(45);
 		}
 		return selectionLayerEClass;
 	}
@@ -1969,7 +2041,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (testScopeEClass == null)
 		{
-			testScopeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(44);
+			testScopeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(46);
 		}
 		return testScopeEClass;
 	}
@@ -1993,7 +2065,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (unitTestScopeEClass == null)
 		{
-			unitTestScopeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(45);
+			unitTestScopeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(47);
 		}
 		return unitTestScopeEClass;
 	}
@@ -2017,7 +2089,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (e2ETestScopeEClass == null)
 		{
-			e2ETestScopeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(46);
+			e2ETestScopeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(48);
 		}
 		return e2ETestScopeEClass;
 	}
@@ -2061,7 +2133,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (inputFileEClass == null)
 		{
-			inputFileEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(47);
+			inputFileEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(49);
 		}
 		return inputFileEClass;
 	}
@@ -2095,7 +2167,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (workflowModuleEClass == null)
 		{
-			workflowModuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(48);
+			workflowModuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(50);
 		}
 		return workflowModuleEClass;
 	}
@@ -2139,7 +2211,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xAttributeEClass == null)
 		{
-			xAttributeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(49);
+			xAttributeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(51);
 		}
 		return xAttributeEClass;
 	}
@@ -2173,7 +2245,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xClassEClass == null)
 		{
-			xClassEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(50);
+			xClassEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(52);
 		}
 		return xClassEClass;
 	}
@@ -2217,7 +2289,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xClassifierEClass == null)
 		{
-			xClassifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(51);
+			xClassifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(53);
 		}
 		return xClassifierEClass;
 	}
@@ -2241,7 +2313,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xDataTypeEClass == null)
 		{
-			xDataTypeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(52);
+			xDataTypeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(54);
 		}
 		return xDataTypeEClass;
 	}
@@ -2265,7 +2337,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xEnumEClass == null)
 		{
-			xEnumEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(53);
+			xEnumEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(55);
 		}
 		return xEnumEClass;
 	}
@@ -2289,7 +2361,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xEnumLiteralEClass == null)
 		{
-			xEnumLiteralEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(54);
+			xEnumLiteralEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(56);
 		}
 		return xEnumLiteralEClass;
 	}
@@ -2333,7 +2405,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xMemberEClass == null)
 		{
-			xMemberEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(55);
+			xMemberEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(57);
 		}
 		return xMemberEClass;
 	}
@@ -2357,7 +2429,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xModelElementEClass == null)
 		{
-			xModelElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(56);
+			xModelElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(58);
 		}
 		return xModelElementEClass;
 	}
@@ -2371,7 +2443,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xNamedElementEClass == null)
 		{
-			xNamedElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(57);
+			xNamedElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(59);
 		}
 		return xNamedElementEClass;
 	}
@@ -2395,7 +2467,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xOperationEClass == null)
 		{
-			xOperationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(58);
+			xOperationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(60);
 		}
 		return xOperationEClass;
 	}
@@ -2419,7 +2491,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xPackageEClass == null)
 		{
-			xPackageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(59);
+			xPackageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(61);
 		}
 		return xPackageEClass;
 	}
@@ -2443,7 +2515,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xReferenceEClass == null)
 		{
-			xReferenceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(60);
+			xReferenceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(62);
 		}
 		return xReferenceEClass;
 	}
@@ -2467,7 +2539,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xStructuralFeatureEClass == null)
 		{
-			xStructuralFeatureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(61);
+			xStructuralFeatureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(63);
 		}
 		return xStructuralFeatureEClass;
 	}
@@ -2481,7 +2553,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (xTypedElementEClass == null)
 		{
-			xTypedElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(62);
+			xTypedElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(64);
 		}
 		return xTypedElementEClass;
 	}
@@ -2525,7 +2597,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (vtlEnrichedCubeEClass == null)
 		{
-			vtlEnrichedCubeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(63);
+			vtlEnrichedCubeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(65);
 		}
 		return vtlEnrichedCubeEClass;
 	}
@@ -2549,7 +2621,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (vtlGeneratedOutputlayerEClass == null)
 		{
-			vtlGeneratedOutputlayerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(64);
+			vtlGeneratedOutputlayerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(66);
 		}
 		return vtlGeneratedOutputlayerEClass;
 	}
@@ -2603,7 +2675,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (vtlForOutputLayerAndIntermediateLayerCombinationEClass == null)
 		{
-			vtlForOutputLayerAndIntermediateLayerCombinationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(65);
+			vtlForOutputLayerAndIntermediateLayerCombinationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(67);
 		}
 		return vtlForOutputLayerAndIntermediateLayerCombinationEClass;
 	}
@@ -2647,7 +2719,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (vtlGeneratedIntermediateLayerEClass == null)
 		{
-			vtlGeneratedIntermediateLayerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(66);
+			vtlGeneratedIntermediateLayerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(68);
 		}
 		return vtlGeneratedIntermediateLayerEClass;
 	}
@@ -2691,7 +2763,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (vtlTransformationEClass == null)
 		{
-			vtlTransformationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(67);
+			vtlTransformationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(69);
 		}
 		return vtlTransformationEClass;
 	}
@@ -2745,7 +2817,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (vtlSchemeEClass == null)
 		{
-			vtlSchemeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(68);
+			vtlSchemeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(70);
 		}
 		return vtlSchemeEClass;
 	}
@@ -2779,7 +2851,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (vtlForSelectionLayerEClass == null)
 		{
-			vtlForSelectionLayerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(69);
+			vtlForSelectionLayerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(71);
 		}
 		return vtlForSelectionLayerEClass;
 	}
@@ -2823,7 +2895,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (vtlModuleEClass == null)
 		{
-			vtlModuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(70);
+			vtlModuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(72);
 		}
 		return vtlModuleEClass;
 	}
@@ -2907,7 +2979,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (entityToVTLIntermediateLayerLinkEClass == null)
 		{
-			entityToVTLIntermediateLayerLinkEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(71);
+			entityToVTLIntermediateLayerLinkEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(73);
 		}
 		return entityToVTLIntermediateLayerLinkEClass;
 	}
@@ -2951,7 +3023,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (vtlForViewEClass == null)
 		{
-			vtlForViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(72);
+			vtlForViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(74);
 		}
 		return vtlForViewEClass;
 	}
@@ -2995,7 +3067,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (comparitorEEnum == null)
 		{
-			comparitorEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(33);
+			comparitorEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(35);
 		}
 		return comparitorEEnum;
 	}
@@ -3009,7 +3081,7 @@ public class Open_reg_specsPackageImpl extends EPackageImpl implements Open_reg_
 	{
 		if (attrComparisonEEnum == null)
 		{
-			attrComparisonEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(42);
+			attrComparisonEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Open_reg_specsPackage.eNS_URI).getEClassifiers().get(44);
 		}
 		return attrComparisonEEnum;
 	}
