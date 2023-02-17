@@ -14,6 +14,9 @@
                     "include": "#blockcomment"
                 },
                 {
+                    "include": "#quotedstring"
+                },
+                {
                     "include": "#keyword"
                 }
             ]
@@ -28,10 +31,17 @@
             "begin": "/\\*(\\*)?(?!/)",
             "end": "\\*/"
         },
+        "quotedstring": {
+            "name": "quotedstring.quotedstring.OpenRegSpecs",
+            "begin": "\"",
+            "end": "\""
+        },
+        
+
         
         "keyword": {
             "name": "keyword.control.OpenRegSpecs",
-            "match": "\\b(RequirementsModule|rules|TitledRequirementsSection|title|requirementsType|sections|allowedtypes|AllowedTypes|RequirementType|package|class|extends|contains|op|id|refers|enum|as|type|wraps|TestModule|tests|Test|inputData|InputFile|fileName|entity|expectedResult|scope|E2ETestScope|scenarios|layer|scriptTask|UnitTestScope|ViewModule|views|View|LayerSQL|selectionLayer|SelectMember|SelectAttribute|where|greater_than|value|WorkflowModule|annotation|dependency|taskTags|ActivityTag|displayName|requirements|activity|subProcess|SubProcess|flowElements|InclusiveGateway|outgoing|ParallelGateway|UserTask|SequenceFlow|from|to|ServiceTask|enrichedAttribute|scenarios|Scenario|requiredAttributes|data_constraints|conditional|not_equals|member|equals|SequenceFlow|ScriptTask|selectionLayers|SelectionLayer|generatedEntity|abstract|import)\\b|!"
+            "match": "\\b(RequirementsModule|rules|TitledRequirementsSection|title|requirementsType|sections|allowedtypes|AllowedTypes|RequirementType|package|class|extends|contains|op|id|refers|enum|as|type|wraps|TestModule|tests|Test|inputData|InputFile|fileName|entity|expectedResult|scope|E2ETestScope|scenarios|layer|scriptTask|UnitTestScope|ViewModule|views|View|LayerSQL|selectionLayer|SelectMember|SelectAttribute|SelectValue|where|greater_than|value|WorkflowModule|annotation|dependency|taskTags|ActivityTag|displayName|requirements|activity|subProcess|SubProcess|flowElements|InclusiveGateway|outgoing|ParallelGateway|UserTask|SequenceFlow|from|to|ServiceTask|enrichedAttribute|scenarios|Scenario|requiredAttributes|data_constraints|conditional|not_equals|member|equals|SequenceFlow|ScriptTask|selectionLayers|SelectionLayer|generatedEntity|abstract|import)\\b|!"
 
         }
     },
