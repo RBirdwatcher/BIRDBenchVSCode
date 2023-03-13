@@ -1,7 +1,7 @@
-# RPMN Editor (Beta)
+# XCoreL Editor (Beta)
 
 
-RPMN integration supports 
+XCoreL integration supports 
 
 * Syntax Highlighting
 * Validation

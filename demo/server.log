@@ -544,7 +544,7 @@ Params: {}
 
 [Trace - 04:54:42 AM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/datamodel.rpmn",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/datamodel.xcorel",
   "diagnostics": [
     {
       "range": {
@@ -567,56 +567,56 @@ Params: {
 
 [Trace - 04:54:42 AM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/workflow_cutdown.rpmn",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/workflow_cutdown.xcorel",
   "diagnostics": []
 }
 
 
 [Trace - 04:54:42 AM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/data_model_cutdown.rpmn",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/data_model_cutdown.xcorel",
   "diagnostics": []
 }
 
 
 [Trace - 04:54:42 AM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/test_tenor_transformation.rpmn",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/test_tenor_transformation.xcorel",
   "diagnostics": []
 }
 
 
 [Trace - 04:54:42 AM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/report_generation.rpmn",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/report_generation.xcorel",
   "diagnostics": []
 }
 
 
 [Trace - 04:54:42 AM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.rpmn",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.xcorel",
   "diagnostics": []
 }
 
 
 [Trace - 04:54:42 AM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/test_netted_delta_sensitivities.rpmn",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/test_netted_delta_sensitivities.xcorel",
   "diagnostics": []
 }
 
 
 [Trace - 04:54:42 AM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/frtb_e2e_test1.rpmn",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/frtb_e2e_test1.xcorel",
   "diagnostics": []
 }
 
 
 [Trace - 04:54:42 AM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.rpmn",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.xcorel",
   "diagnostics": []
 }
 
@@ -624,7 +624,7 @@ Params: {
 [Trace - 04:54:42 AM] Received notification 'textDocument/didOpen'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.rpmn",
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.xcorel",
     "languageId": "OpenRegSpecs",
     "version": 1,
     "text": "\n\t\t /**  \"Copyright (c) 2020 Bird Software Solutions Ltd\n All rights reserved. This file and the accompanying materials are made available under the terms of the Eclipse Public License v2.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v20.html\n\nSPDX-License-Identifier: EPL-2.0 \n\n Contributors:\n Neil Mackenzie - initial API and implementation */\n \n \t\tpackage bird   \n\t\t\t\n\t\t\tclass Delta_sensitivity extends Risk_measure {\n\t\t\t\tCurrency  Currency_of_record \n\t\t\t\tDouble  Delta_sensitivity \n\t\t\t\tDouble  Tenor \n\t\t\t}\n\t\t\tclass Delta_sensitivity_BaseTable {\n\t\t\t\tcontains Delta_sensitivity [0..-1] Delta_sensitivitys \n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\tclass GIRR_risk_factor extends Risk_factor {\n\t\t\t\tGIRR_risk_factor_type  GIRR_risk_factor_type \n\t\t\t\tCurrency  Main_currency \n\t\t\t\tCurrency  Second_currency \n\t\t\t}\n\t\t\tclass GIRR_risk_factor_BaseTable {\n\t\t\t\tcontains GIRR_risk_factor [0..-1] GIRR_risk_factors \n\t\t\t}\n\t\t\t\n\t\t\tclass Netted_delta_sensitivities_per_risk_factor_and_tenor_derived {\n\t\t\t\t\n\t\t\t\top String  bucket_id()  \n\t\t\t\t{\n\t\t\t\t \t\"theRisk_factor.main_currency.literal\"\n\t\t\t\t}\n\t\t\t \top Double  GIRR_delta_risk_weight() \n\t\t\t\t{\n\t\t\t\t \t \"switch tenor {\n\t\t\t\t \t\t\t\t\t\t     case tenor \u003d\u003d 1.0: 0.14\n\t\t\t\t \t\t\t\t\t\t\t case tenor \u003d\u003d 5.0 : 0.15\n\t\t\t\t \t\t\t\t\t\t\t default : 1.0\n\t\t\t\t \t\t\t\t\t\t  }\"\n\t\t\t\t}\n\t\t\t \top Double  netted_delta_sensitivities() \n\t\t\t\t{\n\t\t\t\t \t\"var total_sensitivities \u003d 0.0\n\t\t\t\t \t\t\t\t\t\tfor (Delta_sensitivity sens : theDelta_sensitivitys) {\n\t\t\t\t \t  \t\t\t\t\t\ttotal_sensitivities \u003d total_sensitivities + sens.delta_sensitivity\n\t\t\t\t \t\t\t\t\t\t}\n\t\t\t\t \t\t\t\t\t\ttotal_sensitivities\"\n\t\t\t\t}\n\t\t\t \tid String  netted_delta_sensitivities_identifier \n\t\t\t \top String  netted_delta_sensitivities_identifier() \n\t\t\t\t{\n\t\t\t\t \t\"theRisk_factor.risk_factor_Identifier + theDelta_sensitivitys.get(0).tenor.toString\"\n\t\t\t\t}\n\t\t\t \top Double  tenor() \n\t\t\t\t{\n\t\t\t\t \t\"theDelta_sensitivitys.get(0).tenor\"\n\t\t\t\t}\n\t\t\t \top Double  weighted_GIRR_delta_sensitivity() \n\t\t\t\t{\n\t\t\t\t \t\"GIRR_delta_risk_weight*netted_delta_sensitivities()\"\n\t\t\t\t}\n\t\t\t \top Double  weighted_GIRR_delta_sensitivity_squared() \n\t\t\t\t{\n\t\t\t\t \t\"weighted_GIRR_delta_sensitivity*weighted_GIRR_delta_sensitivity\"\n\t\t\t\t}\n\t\t\t\trefers Delta_sensitivity [0..-1] theDelta_sensitivitys \n\t\t\t\trefers GIRR_risk_factor [1..1] theRisk_factor \n\t\t\t}\n\t\t\tclass Netted_delta_sensitivities_per_risk_factor_and_tenor_derived_DerivedTable {\n\t\t\t\tcontains Netted_delta_sensitivities_per_risk_factor_and_tenor_derived [0..-1] Netted_delta_sensitivities_per_risk_factor_and_tenor_deriveds \n\t\t\t\top Netted_delta_sensitivities_per_risk_factor_and_tenor_derived [0..-1]  Netted_delta_sensitivities_per_risk_factor_and_tenor_deriveds() {\n\t\t\t\t\t\"\n\t\t\t\t\tvar org.eclipse.emf.common.util.EList\u003cNetted_delta_sensitivities_per_risk_factor_and_tenor_derived\u003e Netted_delta_sensitivities_per_risk_factor_and_tenor_derived_temp \u003d new org.eclipse.emf.common.util.BasicEList\u003cNetted_delta_sensitivities_per_risk_factor_and_tenor_derived\u003e\n\t\tvar map \u003d new java.util.HashMap\u003cString, Netted_delta_sensitivities_per_risk_factor_and_tenor_derived\u003e;\t\t\n\t\tfor (GIRR_risk_factor riskfactor: sourceTable2.GIRR_risk_factors)\n\t\t{\n\t\t\t\tfor(Delta_sensitivity sens: sourceTable1.delta_sensitivitys)\n\t\t\t\t{\n\t\t\t\t\tif (sens.theRisk_factor \u003d\u003d riskfactor)\n\t\t\t\t\t{\n\t\t\t\t\t\tvar tenor \u003d sens.tenor\n\t\t\t\t\t\tvar key \u003d riskfactor.toString + tenor.toString\n\t\t\t\t\t\tif (!(map.containsKey(key))) \n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tvar newItem \u003d BirdFactory.eINSTANCE.createNetted_delta_sensitivities_per_risk_factor_and_tenor_derived\n\t\t\t\t\t\t\tnewItem.theRisk_factor \u003d riskfactor\n\t\t\t\t\t\t\tNetted_delta_sensitivities_per_risk_factor_and_tenor_derived_temp.add(newItem)\n\t\t\t\t\t\t\tmap.put(key,newItem)\n\t\t\t\t\t\t} \n\t\t\t\t\t\tvar Netted_delta_sensitivities_per_risk_factor_and_tenor_derived1 \u003d map.get(key)\n\t\t\t\t\t\tNetted_delta_sensitivities_per_risk_factor_and_tenor_derived1.theDelta_sensitivitys.add(sens)\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t}\n\t\treturn Netted_delta_sensitivities_per_risk_factor_and_tenor_derived_temp\n\t\t\t\t \"\n\t\t\t\t}\n\t\t\t\trefers Delta_sensitivity_BaseTable  sourceTable1 \n\t\t\t\trefers GIRR_risk_factor_BaseTable  sourceTable2 \n\t\t\t}\n\t\t\t\n\t\t\tclass OUTPUT_LAYER_FRTB {\n\t\t\t\top Approach_For_Prudential_Purposes  Approach_For_Prudential_Purposes() { }\n\t\t\t\top Base  Base(){ } \n\t\t\t\top Contingent_Scenario  Contingent_Scenario() { }\n\t\t\t\top Delta_Vega_Or_Curvature_Risk  Delta_Vega_Or_Curvature_Risk() { } \n\t\t\t\top Boolean  Hypothetical_Value_Under_Specific_Assumptions() { } \n\t\t\t\top Instrument  Instrument() { }\n\t\t\t\top Main_Catagory  Main_Catagory() { } \n\t\t\t\top Market_Risk_Portfolio  Market_Risk_Portfolio() { } \n\t\t\t\top Double  Own_Funds_Requirements() { } \n\t\t\t\top Position_In_The_Instrument  Position_In_The_Instrument() { } \n\t\t\t\top Prudential_Portfolio  Prudentia_lPortfolio() { } \n\t\t\t\top Double  Sensitivity_To_Delta_Risk_Factors() { } \n\t\t\t\top Type_And_Nature_Of_Sensitivity  Type_And_Nature_Of_Sensitivity() { } \n\t\t\t\top Type_Of_Risk  Type_Of_Risk() { } \n\t\t\t}\n\t\t\tabstract class Risk_factor {\n\t\t\t\tString  Risk_factor_Identifier \n\t\t\t}\n\t\t\tclass Risk_factor_BaseTable {\n\t\t\t\tcontains Risk_factor [0..-1] Risk_factors \n\t\t\t}\n\t\t\tabstract class Risk_measure {\n\t\t\t\tString  Risk_measure_identifier \n\t\t\t\trefers Risk_factor [1..1] theRisk_factor \n\t\t\t\trefers Security_or_exchange_tradable_derivative_position [1..1] theSecurity_or_exchange_tradable_derivative_position \n\t\t\t}\n\t\t\tclass Risk_measure_BaseTable {\n\t\t\t\tcontains Risk_measure [0..-1] Risk_measures \n\t\t\t}\n\t\t\t\n\t\t\tclass Security_or_exchange_tradable_derivative_position {\n\t\t\t\tString  Position_identifier \n\t\t\t}\n\t\t\tclass Security_or_exchange_tradable_derivative_position_BaseTable {\n\t\t\t\tcontains Security_or_exchange_tradable_derivative_position [0..-1] Security_or_exchange_tradable_derivative_positions \n\t\t\t}\n\t\t\t\n\t\t\tenum Approach_For_Prudential_Purposes {  NA as \"NA\" \u003d 1 Sensitivities_Based_Method as \"Sensitivities_Based_Method\" \u003d 2 Method_To_Determine_The_Default_Risk_Charge as \"Method_To_Determine_The_Default_Risk_Charge\" \u003d 3 Method_To_Determine_The_Residual_Risk_Charge as \"Method_To_Determine_The_Residual_Risk_Charge\" \u003d 4 }\n\t\t\tenum Base {  NA as \"NA\" \u003d 5 Memorandum_Items as \"Memorandum_Items\" \u003d 6 Exposures as \"Exposures\" \u003d 7 }\n\t\t\tenum Boolean {  }\n\t\t\tenum Commodity_type {  NA as \"NA\" \u003d 8 Energy_solid_combustables as \"Energy_solid_combustables\" \u003d 9 Softs_and_other_agriculturals as \"Softs_and_other_agriculturals\" \u003d 10 Other_commodity as \"Other_commodity\" \u003d 11 Energy_liquid_combustables as \"Energy_liquid_combustables\" \u003d 12 Energy_electricity_and_carbon_trading as \"Energy_electricity_and_carbon_trading\" \u003d 13 Freight as \"Freight\" \u003d 14 Metals_non_precious as \"Metals_non_precious\" \u003d 15 Gaseous_combustables as \"Gaseous_combustables\" \u003d 16 Precious_metals as \"Precious_metals\" \u003d 17 Grains_and_oilseed as \"Grains_and_oilseed\" \u003d 18 Livestock_and_dairy as \"Livestock_and_dairy\" \u003d 19 }\n\t\t\tenum Contingent_Scenario {  NA as \"NA\" \u003d 20 Low_Correlation_Scenario as \"Low_Correlation_Scenario\" \u003d 21 Medium_Correlation_Scenario as \"Medium_Correlation_Scenario\" \u003d 22 High_Correlation_Scenario as \"High_Correlation_Scenario\" \u003d 23 }\n\t\t\tenum CSR_curve_type {  NA as \"NA\" \u003d 24 Bond as \"Bond\" \u003d 25 CDS as \"CDS\" \u003d 26 }\n\t\t\tenum Currency {  NA as \"NA\" \u003d 27 EUR as \"EUR\" \u003d 28 JYP as \"JYP\" \u003d 29 USD as \"USD\" \u003d 30 }\n\t\t\tenum Delta_Vega_Or_Curvature_Risk {  NA as \"NA\" \u003d 31 Delta_Risk as \"Delta_Risk\" \u003d 32 Vega_Risk as \"Vega_Risk\" \u003d 33 Curvature_Risk as \"Curvature_Risk\" \u003d 34 }\n\t\t\tenum Economy {  NA as \"NA\" \u003d 35 Emerging_market as \"Emerging_market\" \u003d 36 Advanced_economy as \"Advanced_economy\" \u003d 37 }\n\t\t\tenum Equity_factor_type {  NA as \"NA\" \u003d 38 Spot as \"Spot\" \u003d 39 Repo as \"Repo\" \u003d 40 }\n\t\t\tenum GIRR_risk_factor_type {  NA as \"NA\" \u003d 41 Inflation as \"Inflation\" \u003d 42 Basis as \"Basis\" \u003d 43 Yield as \"Yield\" \u003d 44 }\n\t\t\tenum Instrument {  NA as \"NA\" \u003d 45 Instruments_Other_Than_Securitisation_Positions as \"Instruments_Other_Than_Securitisation_Positions\" \u003d 46 Securitisation_Positions as \"Securitisation_Positions\" \u003d 47 Instruments_With_Exotic_Underlyings as \"Instruments_With_Exotic_Underlyings\" \u003d 48 Alternative_Correlation_Trading_Portfolio as \"Alternative_Correlation_Trading_Portfolio\" \u003d 49 }\n\t\t\tenum Main_Catagory {  NA as \"NA\" \u003d 50 Instruments_Subject_To_Market_Risk as \"Instruments_Subject_To_Market_Risk\" \u003d 51 }\n\t\t\tenum Market_cap {  NA as \"NA\" \u003d 52 Large as \"Large\" \u003d 53 Small as \"Small\" \u003d 54 }\n\t\t\tenum Market_Risk_Portfolio {  NA as \"NA\" \u003d 55 Non_ACTP as \"Non_ACTP\" \u003d 56 ACTP as \"ACTP\" \u003d 57 }\n\t\t\tenum Number {  }\n\t\t\tenum Position_In_The_Instrument {  NA as \"NA\" \u003d 58 Long_Position as \"Long_Position\" \u003d 59 Short_Position as \"Short_Position\" \u003d 60 }\n\t\t\tenum Prudential_Portfolio {  NA as \"NA\" \u003d 61 Trading_Book as \"Trading_Book\" \u003d 62 Banking_And_Trading_Book as \"Banking_And_Trading_Book\" \u003d 63 }\n\t\t\tenum Rating_grade {  NA as \"NA\" \u003d 64 Senior_IG as \"Senior_IG\" \u003d 65 Non_senior_IG as \"Non_senior_IG\" \u003d 66 High_yield as \"High_yield\" \u003d 67 Non_rated as \"Non_rated\" \u003d 68 IG as \"IG\" \u003d 69 }\n\t\t\tenum Sector {  NA as \"NA\" \u003d 70 Sovereign as \"Sovereign\" \u003d 71 Local_government as \"Local_government\" \u003d 72 Financials as \"Financials\" \u003d 73 Basic_materials as \"Basic_materials\" \u003d 74 Consumer_goods as \"Consumer_goods\" \u003d 75 Technology as \"Technology\" \u003d 76 Health_care as \"Health_care\" \u003d 77 Covered_bonds as \"Covered_bonds\" \u003d 78 Other_sector as \"Other_sector\" \u003d 79 }\n\t\t\tenum Securitisation_sector {  NA as \"NA\" \u003d 80 RMBS_prime as \"RMBS_prime\" \u003d 81 RMBS_mid_pirme as \"RMBS_mid_pirme\" \u003d 82 RMBS_sub_prime as \"RMBS_sub_prime\" \u003d 83 CMBS as \"CMBS\" \u003d 84 ABS_student_loan as \"ABS_student_loan\" \u003d 85 ABS_auto as \"ABS_auto\" \u003d 86 CLO_non_CTP as \"CLO_non_CTP\" \u003d 87 Other_securitisation_sector as \"Other_securitisation_sector\" \u003d 88 }\n\t\t\tenum ShockDirection {  NA as \"NA\" \u003d 89 Up as \"Up\" \u003d 90 Down as \"Down\" \u003d 91 }\n\t\t\tenum String_up_to_60_characters_limited_to_letters__capital_and_low_cases___numbers__dash_and_underscore {  }\n\t\t\tenum String_up_to_60_characters_limited_to_letters__capital_and_low_cases___numbers__dash_and_underscore_1 {  }\n\t\t\tenum Type_And_Nature_Of_Sensitivity {  NA as \"NA\" \u003d 92 Positive_Sensitivity_Gross_Per_Risk_Class_Unweighted as \"Positive_Sensitivity_Gross_Per_Risk_Class_Unweighted\" \u003d 93 Negative_Sensitivity_Gross_Per_Risk_Class_Unweighted as \"Negative_Sensitivity_Gross_Per_Risk_Class_Unweighted\" \u003d 94 Sensitivity_Net_Per_Risk_Class_Unweighted as \"Sensitivity_Net_Per_Risk_Class_Unweighted\" \u003d 95 }\n\t\t\tenum Type_Of_Risk {  NA as \"NA\" \u003d 96 GIRR as \"GIRR\" \u003d 97 Equity_Risk as \"Equity_Risk\" \u003d 98 Foreign_Exchange_Risk as \"Foreign_Exchange_Risk\" \u003d 99 Commodity_Risk as \"Commodity_Risk\" \u003d 100 CSR as \"CSR\" \u003d 101 Default_Risk as \"Default_Risk\" \u003d 102 Residual_Risk as \"Residual_Risk\" \u003d 103 }\n\t\t\tenum Unknown {  }\n\t\t\ttype Double wraps Double\n\t\t\ttype String wraps String\n\n"
@@ -635,7 +635,7 @@ Params: {
 [Trace - 04:54:42 AM] Received request 'textDocument/documentSymbol - (1)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.rpmn"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.xcorel"
   }
 }
 
@@ -643,7 +643,7 @@ Params: {
 [Trace - 04:54:42 AM] Received request 'textDocument/codeAction - (2)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.rpmn"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.xcorel"
   },
   "range": {
     "start": {
@@ -665,14 +665,14 @@ Params: {
 [Trace - 04:54:42 AM] Received request 'textDocument/foldingRange - (3)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.rpmn"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.xcorel"
   }
 }
 
 
 [Trace - 04:54:43 AM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.rpmn",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.xcorel",
   "diagnostics": []
 }
 
@@ -5855,7 +5855,7 @@ Result: [
 [Trace - 04:54:43 AM] Received request 'textDocument/semanticTokens/full - (4)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.rpmn"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.xcorel"
   }
 }
 
@@ -12698,7 +12698,7 @@ Params: {
 [Trace - 04:58:43 AM] Received request 'textDocument/hover - (5)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.rpmn"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.xcorel"
   },
   "position": {
     "line": 1,
@@ -12795,7 +12795,7 @@ Params: {
 [Trace - 04:58:45 AM] Received request 'textDocument/hover - (6)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.rpmn"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/abc.xcorel"
   },
   "position": {
     "line": 7,

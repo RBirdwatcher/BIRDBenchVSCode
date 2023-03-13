@@ -1,8 +1,8 @@
 {
-    "name": "rpmn-editor",
-    "displayName": "RPMN Editor (Beta)",
-    "description": "Regulatory Process and Modeling Notation Editor (Beta)",
-    "version": "0.9.3",
+    "name": "xcorel-editor",
+    "displayName": "XCoreL Editor (Beta)",
+    "description": "XCore with Lineage Extensions editor (Beta)",
+    "version": "0.9.5",
     "publisher": "BirdSoftwareSolutions",
     "icon": "images/BirdSoftwareSolutions.png",
     "license": "EPL-1.0",
@@ -31,7 +31,7 @@
                     "OpenRegSpecs"
                 ],
                 "extensions": [
-                    ".rpmn"
+                    ".xcorel"
                 ],
                 "configuration": "./OpenRegSpecs.configuration.json"
             }
