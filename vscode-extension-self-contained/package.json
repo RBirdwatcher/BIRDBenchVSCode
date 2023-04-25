@@ -1,8 +1,8 @@
 {
-    "name": "xcorel-editor",
-    "displayName": "XCoreL Editor (Beta)",
+    "name": "ecore4reg-editor",
+    "displayName": "Ecore4Reg Editor (Beta)",
     "description": "XCore with Lineage Extensions editor (Beta)",
-    "version": "0.9.5",
+    "version": "0.9.6",
     "publisher": "BirdSoftwareSolutions",
     "icon": "images/BirdSoftwareSolutions.png",
     "license": "EPL-1.0",
@@ -20,37 +20,37 @@
         "Programming Languages"
     ],
     "activationEvents": [
-        "onLanguage:OpenRegSpecs"
+        "onLanguage:Ecore4Reg"
     ],
     "main": "out/extension",
     "contributes": {
         "languages": [
             {
-                "id": "OpenRegSpecs",
+                "id": "Ecore4Reg",
                 "aliases": [
-                    "OpenRegSpecs"
+                    "Ecore4Reg"
                 ],
                 "extensions": [
-                    ".xcorel"
+                    ".ecore4reg"
                 ],
-                "configuration": "./OpenRegSpecs.configuration.json"
+                "configuration": "./Ecore4Reg.configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "OpenRegSpecs",
-                "scopeName": "text.OpenRegSpecs",
-                "path": "./syntaxes/OpenRegSpecs.tmLanguage.json"
+                "language": "Ecore4Reg",
+                "scopeName": "text.Ecore4Reg",
+                "path": "./syntaxes/Ecore4Reg.tmLanguage.json"
             }
         ],
         "commands": [
             {
-                "command": "OpenRegSpecs.a.proxy",
-                "title": "OpenRegSpecs Command A"
+                "command": "Ecore4Reg.a.proxy",
+                "title": "Ecore4Reg Command A"
             },
             {
-                "command": "OpenRegSpecs.b",
-                "title": "OpenRegSpecs Command B"
+                "command": "Ecore4Reg.b",
+                "title": "Ecore4Reg Command B"
             }
         ]
     },

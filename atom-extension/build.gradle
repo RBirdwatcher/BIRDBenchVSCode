@@ -1,8 +1,8 @@
-evaluationDependsOn(':org.eclipse.efbt.openregspecs.dsl.ide')
+evaluationDependsOn(':org.eclipse.efbt.ecore4reg.dsl.ide')
 
 task copyApplication(type: Sync) {
-    from tasks.getByPath(':org.eclipse.efbt.openregspecs.dsl.ide:installDist').outputs
-    into 'lib/OpenRegSpecs'
+    from tasks.getByPath(':org.eclipse.efbt.ecore4reg.dsl.ide:installDist').outputs
+    into 'lib/Ecore4Reg'
 }
 
 apply plugin: 'base'

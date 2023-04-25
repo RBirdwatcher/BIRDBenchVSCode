@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.eclipse.org/efbt/ecore4reg"
+            class="org.eclipse.efbt.ecore4reg.dsl.ecore4reg.Ecore4regPackage"
+            genModel="model/ecore4reg.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="ecore4reg"
+            class="org.eclipse.efbt.ecore4reg.dsl.ecore4reg.util.Ecore4regResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

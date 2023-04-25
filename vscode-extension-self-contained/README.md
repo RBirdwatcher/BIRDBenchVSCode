@@ -1,7 +1,7 @@
-# XCoreL Editor (Beta)
+# Ecore4Reg Editor (Beta)
 
 
-XCoreL integration supports 
+Ecore4Reg integration supports 
 
 * Syntax Highlighting
 * Validation

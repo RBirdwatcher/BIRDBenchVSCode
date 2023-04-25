@@ -1,13 +1,13 @@
-'scopeName': 'source.OpenRegSpecs'
-'name': 'OpenRegSpecsFiles'
+'scopeName': 'source.Ecore4Reg'
+'name': 'Ecore4RegFiles'
 'fileTypes': [
-  'xcorel'
+  'ecore4reg'
 ]
 injections:
   'L:*':
     patterns: [
         {
             match: '\\b(Hello|from)\\b'
-            name: 'keyword.control.OpenRegSpecs'
+            name: 'keyword.control.Ecore4Reg'
         }
     ]

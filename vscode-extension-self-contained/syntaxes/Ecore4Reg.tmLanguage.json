@@ -1,0 +1,54 @@
+{
+    "name": "Ecore4Reg",
+    "scopeName": "text.Ecore4Reg",
+    "fileTypes": [
+        "Ecore4Reg"
+    ],
+    "repository": {
+        "general": {
+            "patterns": [
+                {
+                    "include": "#linecomment"
+                },
+                {
+                    "include": "#blockcomment"
+                },
+                {
+                    "include": "#quotedstring"
+                },
+                {
+                    "include": "#keyword"
+                }
+            ]
+        },
+        "linecomment": {
+            "name": "comment.line.double-dash.Ecore4Reg",
+            "begin": "(^[ \\t]+)?(?=//)",
+            "end": "(?=$)"
+        },
+        "blockcomment": {
+            "name": "comment.block.Ecore4Reg",
+            "begin": "/\\*(\\*)?(?!/)",
+            "end": "\\*/"
+        },
+        "quotedstring": {
+            "name": "quotedstring.quotedstring.Ecore4Reg",
+            "begin": "\"",
+            "end": "\""
+        },
+        
+
+        
+        "keyword": {
+            "name": "keyword.control.Ecore4Reg",
+            "match": "\\b(RequirementsModule|rules|TitledRequirementsSection|title|requirementsType|sections|allowedtypes|AllowedTypes|RequirementType|package|class|extends|contains|op|id|refers|enum|as|type|wraps|TestModule|tests|Test|inputData|InputFile|fileName|entity|expectedResult|scope|E2ETestScope|scenarios|layer|scriptTask|UnitTestScope|ViewModule|views|View|LayerSQL|selectionLayer|SelectMember|SelectAttribute|SelectValue|where|greater_than|value|WorkflowModule|annotation|dependency|taskTags|ActivityTag|displayName|requirements|activity|subProcess|SubProcess|flowElements|InclusiveGateway|outgoing|ParallelGateway|UserTask|SequenceFlow|from|to|ServiceTask|enrichedAttribute|scenarios|Scenario|requiredAttributes|data_constraints|conditional|not_equals|member|equals|SequenceFlow|ScriptTask|selectionLayers|SelectionLayer|generatedEntity|abstract|import)\\b|!"
+
+        }
+    },
+    "patterns": [
+        {
+            "include": "#general"
+        }
+    ],
+    "uuid": "8383e49a-fa0d-4bb5-827b-10e8abb294ca"
+}

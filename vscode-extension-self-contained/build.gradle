@@ -1,8 +1,8 @@
 task copyApplication(type: Sync) {
-    def installDistTask = project(':org.eclipse.efbt.openregspecs.dsl.ide').tasks.installDist
+    def installDistTask = project(':org.eclipse.efbt.ecore4reg.dsl.ide').tasks.installDist
     dependsOn installDistTask
     from installDistTask.outputs
-    into 'src/OpenRegSpecs'
+    into 'src/Ecore4Reg'
 }
 
 clean {

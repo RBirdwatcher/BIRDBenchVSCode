@@ -24,7 +24,7 @@ export function activate(context: ExtensionContext) {
     };
     
     let clientOptions: LanguageClientOptions = {
-        documentSelector: ['OpenRegSpecs'],
+        documentSelector: ['Ecore4Reg'],
         synchronize: {
             fileEvents: workspace.createFileSystemWatcher('**/*.*')
         }
@@ -33,14 +33,14 @@ export function activate(context: ExtensionContext) {
     // Create the language client and start the client.
     lc = new LanguageClient('Xtext Server', serverOptions, clientOptions);
 
-    var disposable2 =commands.registerCommand("OpenRegSpecs.a.proxy", async () => {
+    var disposable2 =commands.registerCommand("Ecore4Reg.a.proxy", async () => {
         let activeEditor = window.activeTextEditor;
-        if (!activeEditor || !activeEditor.document || activeEditor.document.languageId !== 'OpenRegSpecs') {
+        if (!activeEditor || !activeEditor.document || activeEditor.document.languageId !== 'Ecore4Reg') {
             return;
         }
 
         if (activeEditor.document.uri instanceof Uri) {
-            commands.executeCommand("OpenRegSpecs.a", activeEditor.document.uri.toString());
+            commands.executeCommand("Ecore4Reg.a", activeEditor.document.uri.toString());
         }
     })
 

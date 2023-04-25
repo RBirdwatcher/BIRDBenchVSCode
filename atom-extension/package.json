@@ -1,8 +1,8 @@
 {
-  "name": "ide-xtext-OpenRegSpecs",
+  "name": "ide-xtext-Ecore4Reg",
   "main": "./lib/main",
   "version": "0.0.28",
-  "description": "OpenRegSpecs language support for Atom-IDE. Demonstrates Xtext Integration in Atom.",
+  "description": "Ecore4Reg language support for Atom-IDE. Demonstrates Xtext Integration in Atom.",
   "publisher": "BirdSoftwareSolutions",
   "icon": "images/BirdSoftwareSolutions.png",
   "license": "EPL-1.0",
@@ -30,7 +30,7 @@
     "mocha-junit-and-console-reporter": "^1.6.0"
   },
   "enhancedScopes": [
-    "source.org.eclipse.efbt.openregspecs.dsl"
+    "source.org.eclipse.efbt.ecore4reg.dsl"
   ],
   "consumedServices": {
     "linter-indie": {
