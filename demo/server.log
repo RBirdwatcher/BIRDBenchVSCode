@@ -1,6 +1,6 @@
-[Trace - 08:53:11 PM] Received request 'initialize - (0)'
+[Trace - 09:18:30 PM] Received request 'initialize - (0)'
 Params: {
-  "processId": 29396,
+  "processId": 959,
   "rootPath": "/workspaces/BIRDBenchVSCode/demo",
   "rootUri": "file:///workspaces/BIRDBenchVSCode/demo",
   "capabilities": {
@@ -478,7 +478,7 @@ Params: {
 }
 
 
-[Trace - 08:53:12 PM] Sending response 'initialize - (0)'. Processing request took 477ms
+[Trace - 09:18:31 PM] Sending response 'initialize - (0)'. Processing request took 1012ms
 Result: {
   "capabilities": {
     "textDocumentSync": 2,
@@ -538,11 +538,11 @@ Result: {
 }
 
 
-[Trace - 08:53:12 PM] Received notification 'initialized'
+[Trace - 09:18:31 PM] Received notification 'initialized'
 Params: {}
 
 
-[Trace - 08:53:12 PM] Sending notification 'textDocument/publishDiagnostics'
+[Trace - 09:18:31 PM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
   "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg",
   "diagnostics": [
@@ -697,7 +697,7 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@eb7bc1a{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Title_IV}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@57e20940{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|0}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@26403a4{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Title_IV}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@5403e768{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|0}\u0027",
       "data": [
         "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
         "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|0"
@@ -716,7 +716,7 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@4d539fa9{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_a}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@5b92c839{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|1}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@42dd243e{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_a}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@181983f1{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|1}\u0027",
       "data": [
         "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
         "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|1"
@@ -735,7 +735,7 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@3bef3639{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_b}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@7027c041{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|2}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@543b4f7a{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_b}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@2c96b5c0{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|2}\u0027",
       "data": [
         "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
         "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|2"
@@ -745,7 +745,7 @@ Params: {
 }
 
 
-[Trace - 08:53:12 PM] Received notification 'textDocument/didOpen'
+[Trace - 09:18:31 PM] Received notification 'textDocument/didOpen'
 Params: {
   "textDocument": {
     "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg",
@@ -756,7 +756,7 @@ Params: {
 }
 
 
-[Trace - 08:53:12 PM] Sending notification 'textDocument/publishDiagnostics'
+[Trace - 09:18:32 PM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
   "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg",
   "diagnostics": [
@@ -911,7 +911,7 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@359a629c{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Title_IV}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@6a7b8249{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|0}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@50cbbced{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Title_IV}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@7cebc831{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|0}\u0027",
       "data": [
         "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
         "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|0"
@@ -930,7 +930,7 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@1992ac0b{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_a}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@4c1ed310{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|1}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@14203cac{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_a}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@2c30869f{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|1}\u0027",
       "data": [
         "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
         "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|1"
@@ -949,7 +949,7 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@621026fc{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_b}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@6a4f769a{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|2}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@6b634f{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_b}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@e101857{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|2}\u0027",
       "data": [
         "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
         "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|2"
@@ -959,7 +959,15 @@ Params: {
 }
 
 
-[Trace - 08:53:13 PM] Received request 'textDocument/codeAction - (1)'
+[Trace - 09:18:32 PM] Received request 'textDocument/documentSymbol - (1)'
+Params: {
+  "textDocument": {
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
+  }
+}
+
+
+[Trace - 09:18:32 PM] Received request 'textDocument/codeAction - (2)'
 Params: {
   "textDocument": {
     "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
@@ -981,189 +989,11 @@ Params: {
 }
 
 
-[Trace - 08:53:13 PM] Sending response 'textDocument/codeAction - (1)'. Processing request took 23ms
+[Trace - 09:18:32 PM] Sending response 'textDocument/codeAction - (2)'. Processing request took 16ms
 Result: []
 
 
-[Trace - 08:53:17 PM] Received request 'textDocument/foldingRange - (2)'
-Params: {
-  "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
-  }
-}
-
-
-[Trace - 08:53:17 PM] Received request 'textDocument/semanticTokens/full - (3)'
-Params: {
-  "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
-  }
-}
-
-
-[Trace - 08:53:17 PM] Sending response 'textDocument/foldingRange - (2)'. Processing request took 14ms
-Result: [
-  {
-    "startLine": 1,
-    "endLine": 7,
-    "kind": "comment"
-  },
-  {
-    "startLine": 9,
-    "endLine": 16
-  }
-]
-
-
-[Trace - 08:53:17 PM] Sending response 'textDocument/semanticTokens/full - (3)'. Processing request took 31ms
-Result: {
-  "data": []
-}
-
-
-[Trace - 08:53:19 PM] Received request 'textDocument/codeAction - (4)'
-Params: {
-  "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
-  },
-  "range": {
-    "start": {
-      "line": 0,
-      "character": 0
-    },
-    "end": {
-      "line": 0,
-      "character": 0
-    }
-  },
-  "context": {
-    "diagnostics": [],
-    "triggerKind": 2
-  }
-}
-
-
-[Trace - 08:53:19 PM] Sending response 'textDocument/codeAction - (4)'. Processing request took 1ms
-Result: []
-
-
-[Trace - 08:53:24 PM] Received notification '$/setTrace'
-Params: {
-  "value": "off"
-}
-
-
-[Trace - 08:53:24 PM] Received request 'textDocument/codeAction - (5)'
-Params: {
-  "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
-  },
-  "range": {
-    "start": {
-      "line": 0,
-      "character": 0
-    },
-    "end": {
-      "line": 0,
-      "character": 0
-    }
-  },
-  "context": {
-    "diagnostics": [],
-    "triggerKind": 2
-  }
-}
-
-
-[Trace - 08:53:24 PM] Received request 'textDocument/codeAction - (6)'
-Params: {
-  "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
-  },
-  "range": {
-    "start": {
-      "line": 0,
-      "character": 0
-    },
-    "end": {
-      "line": 0,
-      "character": 0
-    }
-  },
-  "context": {
-    "diagnostics": [],
-    "triggerKind": 2
-  }
-}
-
-
-[Trace - 08:53:24 PM] Sending response 'textDocument/codeAction - (5)'. Processing request took 3ms
-Result: []
-
-
-[Trace - 08:53:24 PM] Sending response 'textDocument/codeAction - (6)'. Processing request took 2ms
-Result: []
-
-
-[Trace - 08:53:24 PM] Received notification '$/cancelRequest'
-Params: {
-  "id": 5
-}
-
-
-[Trace - 08:53:24 PM] Received notification '$/setTrace'
-Params: {
-  "value": "off"
-}
-
-
-[Trace - 08:53:24 PM] Received notification '$/setTrace'
-Params: {
-  "value": "off"
-}
-
-
-[Trace - 08:53:24 PM] Received request 'textDocument/codeAction - (7)'
-Params: {
-  "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
-  },
-  "range": {
-    "start": {
-      "line": 0,
-      "character": 0
-    },
-    "end": {
-      "line": 0,
-      "character": 0
-    }
-  },
-  "context": {
-    "diagnostics": [],
-    "triggerKind": 2
-  }
-}
-
-
-[Trace - 08:53:24 PM] Sending response 'textDocument/codeAction - (7)'. Processing request took 5ms
-Result: []
-
-
-[Trace - 08:53:24 PM] Received notification '$/setTrace'
-Params: {
-  "value": "off"
-}
-
-
-[Trace - 08:53:24 PM] Received request 'textDocument/documentSymbol - (8)'
-Params: {
-  "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
-  }
-}
-
-
-[Trace - 08:53:24 PM] Sending response 'textDocument/documentSymbol - (8)'. Processing request took 20ms
+[Trace - 09:18:32 PM] Sending response 'textDocument/documentSymbol - (1)'. Processing request took 71ms
 Result: [
   {
     "name": "CRRRuleBook",
@@ -1333,11 +1163,85 @@ Result: [
 ]
 
 
-[Trace - 08:53:25 PM] Received notification 'workspace/didChangeWatchedFiles'
+[Trace - 09:18:32 PM] Received request 'textDocument/foldingRange - (3)'
+Params: {
+  "textDocument": {
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
+  }
+}
+
+
+[Trace - 09:18:32 PM] Sending response 'textDocument/foldingRange - (3)'. Processing request took 9ms
+Result: [
+  {
+    "startLine": 1,
+    "endLine": 7,
+    "kind": "comment"
+  },
+  {
+    "startLine": 9,
+    "endLine": 16
+  }
+]
+
+
+[Trace - 09:18:32 PM] Received request 'textDocument/codeAction - (4)'
+Params: {
+  "textDocument": {
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
+  },
+  "range": {
+    "start": {
+      "line": 0,
+      "character": 0
+    },
+    "end": {
+      "line": 0,
+      "character": 0
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+
+[Trace - 09:18:32 PM] Sending response 'textDocument/codeAction - (4)'. Processing request took 2ms
+Result: []
+
+
+[Trace - 09:18:32 PM] Received request 'textDocument/semanticTokens/full - (5)'
+Params: {
+  "textDocument": {
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
+  }
+}
+
+
+[Trace - 09:18:32 PM] Sending response 'textDocument/semanticTokens/full - (5)'. Processing request took 40ms
+Result: {
+  "data": []
+}
+
+
+[Trace - 09:18:32 PM] Received notification 'workspace/didChangeWatchedFiles'
 Params: {
   "changes": [
     {
-      "uri": "file:///workspaces/BIRDBenchVSCode/demo/error.log",
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    },
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    },
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    },
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
       "type": 2
     },
     {
@@ -1348,35 +1252,7 @@ Params: {
 }
 
 
-[Trace - 08:53:26 PM] Received notification 'workspace/didChangeWatchedFiles'
-Params: {
-  "changes": [
-    {
-      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
-      "type": 2
-    }
-  ]
-}
-
-
-[Trace - 08:53:26 PM] Received notification 'workspace/didChangeWatchedFiles'
-Params: {
-  "changes": [
-    {
-      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
-      "type": 2
-    }
-  ]
-}
-
-
-[Trace - 08:53:26 PM] Received notification '$/setTrace'
-Params: {
-  "value": "off"
-}
-
-
-[Trace - 08:53:27 PM] Received notification 'workspace/didChangeWatchedFiles'
+[Trace - 09:18:33 PM] Received notification 'workspace/didChangeWatchedFiles'
 Params: {
   "changes": [
     {
@@ -1384,9 +1260,16 @@ Params: {
       "type": 2
     },
     {
-      "uri": "file:///workspaces/BIRDBenchVSCode/demo/error.log",
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
       "type": 2
-    },
+    }
+  ]
+}
+
+
+[Trace - 09:18:33 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
     {
       "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
       "type": 2
@@ -1395,15 +1278,399 @@ Params: {
 }
 
 
-[Trace - 08:53:27 PM] Received request 'shutdown - (9)'
-Params: null
+[Trace - 09:18:34 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
 
 
-[Trace - 08:53:27 PM] Sending response 'shutdown - (9)'. Processing request took 1ms
-Result: {}
+[Trace - 09:18:34 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
 
 
-[Trace - 08:53:27 PM] Received notification 'exit'
-Params: null
+[Trace - 09:18:35 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:35 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:35 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:36 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:36 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:37 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:37 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:38 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:38 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:39 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:39 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:39 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:40 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:40 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:41 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:41 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:42 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:42 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:43 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:43 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:43 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:44 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:44 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:45 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:45 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:46 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:46 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:46 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:47 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:47 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:48 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:48 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:49 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
+
+
+[Trace - 09:18:49 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///workspaces/BIRDBenchVSCode/demo/server.log",
+      "type": 2
+    }
+  ]
+}
 
 

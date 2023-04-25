@@ -2,7 +2,6 @@
 node_modules
 
 # Xtext / Xtend
-model
 src-gen
 xtend-gen
 .antlr*.jar
