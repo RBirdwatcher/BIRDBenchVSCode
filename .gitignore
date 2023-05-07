@@ -7,7 +7,6 @@ xtend-gen
 .antlr*.jar
 
 # Eclipse
-.project
 .settings/
 .metadata/
 bin/
