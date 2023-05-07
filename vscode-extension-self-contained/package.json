@@ -1,8 +1,8 @@
 {
     "name": "ecore4reg-editor",
     "displayName": "Ecore4Reg Editor (Beta)",
-    "description": "XCore with Lineage Extensions editor (Beta)",
-    "version": "0.9.6",
+    "description": "Ecore4Reg editor (Beta)",
+    "version": "0.9.7",
     "publisher": "BirdSoftwareSolutions",
     "icon": "images/BirdSoftwareSolutions.png",
     "license": "EPL-1.0",
