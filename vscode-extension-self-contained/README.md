@@ -1,7 +1,7 @@
-# Ecore4Reg Editor (Beta)
+# Regdna Editor (Beta)
 
 
-Ecore4Reg integration supports 
+Regdna integration supports 
 
 * Syntax Highlighting
 * Validation

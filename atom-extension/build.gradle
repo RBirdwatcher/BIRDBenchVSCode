@@ -1,8 +1,8 @@
-evaluationDependsOn(':org.eclipse.efbt.ecore4reg.dsl.ide')
+evaluationDependsOn(':org.eclipse.efbt.regdna.dsl.ide')
 
 task copyApplication(type: Sync) {
-    from tasks.getByPath(':org.eclipse.efbt.ecore4reg.dsl.ide:installDist').outputs
-    into 'lib/Ecore4Reg'
+    from tasks.getByPath(':org.eclipse.efbt.regdna.dsl.ide:installDist').outputs
+    into 'lib/Regdna'
 }
 
 apply plugin: 'base'

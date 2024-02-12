@@ -39,7 +39,7 @@ configure(subprojects.findAll { it.name.startsWith('org.eclipse.efbt') }) {
 	apply plugin: 'eclipse'
 	apply plugin: 'idea'
 	
-	group = 'org.eclipse.efbt.ecore4reg.dsl'
+	group = 'org.eclipse.efbt.regdna.dsl'
 	version = '1.0.0-SNAPSHOT'
 	
 	sourceCompatibility = '1.8'

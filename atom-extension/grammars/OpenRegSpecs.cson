@@ -1,13 +1,13 @@
-'scopeName': 'source.Ecore4Reg'
-'name': 'Ecore4RegFiles'
+'scopeName': 'source.Regdna'
+'name': 'RegdnaFiles'
 'fileTypes': [
-  'ecore4reg'
+  'regdna'
 ]
 injections:
   'L:*':
     patterns: [
         {
             match: '\\b(Hello|from)\\b'
-            name: 'keyword.control.Ecore4Reg'
+            name: 'keyword.control.Regdna'
         }
     ]

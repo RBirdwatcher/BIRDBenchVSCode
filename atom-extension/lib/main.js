@@ -2,29 +2,29 @@ const {AutoLanguageClient} = require('atom-languageclient');
 const cp = require('child_process');
 const os = require("os");
 const path = require("path");
-class Ecore4RegLanguageClient extends AutoLanguageClient {
+class RegdnaLanguageClient extends AutoLanguageClient {
     getGrammarScopes() {
-        return ['source.Ecore4Reg']
+        return ['source.Regdna']
     }
  
     getLanguageName() {
-        return 'Ecore4Reg (Xtext)'
+        return 'Regdna (Xtext)'
     }
  
     getServerName() {
-        return 'Ecore4Reg (Xtext) Language Server'
+        return 'Regdna (Xtext) Language Server'
     }
  
     startServerProcess(projectPath) {
-        const serverHome = path.join(__dirname, 'Ecore4Reg');
+        const serverHome = path.join(__dirname, 'Regdna');
         const args = [];
-        let launcher = os.platform() === 'win32' ? 'Ecore4Reg-standalone.bat' : 'Ecore4Reg-standalone';
-        let script = path.join(__dirname, 'Ecore4Reg', 'bin', launcher)
+        let launcher = os.platform() === 'win32' ? 'Regdna-standalone.bat' : 'Regdna-standalone';
+        let script = path.join(__dirname, 'Regdna', 'bin', launcher)
         const childProcess = cp.spawn(script, args,{ cwd: serverHome });
         this.captureServerErrors(childProcess);
         childProcess.on('close', exitCode => {
             if (!childProcess.killed) {
-                atom.notifications.addError('IDE-Ecore4Reg language server stopped unexpectedly.', {
+                atom.notifications.addError('IDE-Regdna language server stopped unexpectedly.', {
                     dismissable: true,
                     description: this.processStdErr ? `<code>${this.processStdErr}</code>` : `Exit code ${exitCode}`
                 })
@@ -34,4 +34,4 @@ class Ecore4RegLanguageClient extends AutoLanguageClient {
     }
 }
  
-module.exports = new Ecore4RegLanguageClient();
+module.exports = new RegdnaLanguageClient();

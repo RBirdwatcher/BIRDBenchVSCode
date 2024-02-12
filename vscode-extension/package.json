@@ -1,8 +1,8 @@
 {
-    "name": "ecore4reg-editor",
-    "displayName": "Ecore4Reg Editor",
-    "description": "Ecore4Reg Editor",
-    "version": "0.9.9",
+    "name": "regdna-editor",
+    "displayName": "Regdna Editor",
+    "description": "Regdna Editor",
+    "version": "1.",
     "publisher": "BirdSoftwareSolutions",
     "icon": "images/BirdSoftwareSolutions.png",
     "license": "EPL-1.0",
@@ -20,37 +20,37 @@
         "Programming Languages"
     ],
     "activationEvents": [
-        "onLanguage:Ecore4Reg"
+        "onLanguage:Regdna"
     ],
     "main": "out/extension",
     "contributes": {
         "languages": [
             {
-                "id": "Ecore4Reg",
+                "id": "Regdna",
                 "aliases": [
-                    "Ecore4Reg"
+                    "Regdna"
                 ],
                 "extensions": [
-                    ".ecore4reg"
+                    ".regdna"
                 ],
-                "configuration": "./Ecore4Reg.configuration.json"
+                "configuration": "./Regdna.configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "Ecore4Reg",
-                "scopeName": "text.Ecore4Reg",
-                "path": "./syntaxes/Ecore4Reg.tmLanguage.json"
+                "language": "Regdna",
+                "scopeName": "text.Regdna",
+                "path": "./syntaxes/Regdna.tmLanguage.json"
             }
         ],
         "commands": [
             {
-                "command": "Ecore4Reg.a.proxy",
-                "title": "Ecore4Reg Command A"
+                "command": "Regdna.a.proxy",
+                "title": "Regdna Command A"
             },
             {
-                "command": "Ecore4Reg.b",
-                "title": "Ecore4Reg Command B"
+                "command": "Regdna.b",
+                "title": "Regdna Command B"
             }
         ]
     },

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.eclipse.org/efbt/regdna"
+            class="org.eclipse.efbt.regdna.dsl.regdna.RegdnaPackage"
+            genModel="model/regdna.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="regdna"
+            class="org.eclipse.efbt.regdna.dsl.regdna.util.RegdnaResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

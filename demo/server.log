@@ -544,7 +544,7 @@ Params: {}
 
 [Trace - 09:18:31 PM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna",
   "diagnostics": [
     {
       "range": {
@@ -697,10 +697,10 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@26403a4{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Title_IV}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@5403e768{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|0}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.TitledRequirementsSectionImpl@26403a4{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#Title_IV}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.RequirementTypeImpl@5403e768{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|0}\u0027",
       "data": [
-        "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
-        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|0"
+        "http://www.eclipse.org/efbt/regdna#//TitledRequirementsSection/requirementsType",
+        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|0"
       ]
     },
     {
@@ -716,10 +716,10 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@42dd243e{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_a}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@181983f1{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|1}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.TitledRequirementsSectionImpl@42dd243e{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#Article_325_1_a}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.RequirementTypeImpl@181983f1{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|1}\u0027",
       "data": [
-        "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
-        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|1"
+        "http://www.eclipse.org/efbt/regdna#//TitledRequirementsSection/requirementsType",
+        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|1"
       ]
     },
     {
@@ -735,10 +735,10 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@543b4f7a{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_b}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@2c96b5c0{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|2}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.TitledRequirementsSectionImpl@543b4f7a{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#Article_325_1_b}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.RequirementTypeImpl@2c96b5c0{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|2}\u0027",
       "data": [
-        "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
-        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|2"
+        "http://www.eclipse.org/efbt/regdna#//TitledRequirementsSection/requirementsType",
+        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|2"
       ]
     }
   ]
@@ -748,8 +748,8 @@ Params: {
 [Trace - 09:18:31 PM] Received notification 'textDocument/didOpen'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg",
-    "languageId": "Ecore4Reg",
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna",
+    "languageId": "Regdna",
     "version": 1,
     "text": "RequirementsModule CRRRuleBook { \n\t/**Copyright (c) 2020 Bird Software Solutions Ltd\n All rights reserved. This file and the accompanying materials are made available under the terms of the Eclipse Public License v2.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v20.html\n\nSPDX-License-Identifier: EPL-2.0 \n\n Contributors:\n Neil Mackenzie - initial API and implementation*/\n\t\t\trules {  \n\t\t\t\tTitledRequirementsSection Title_IV  { \n\t\t\t\t\ttitle Title_IV requirementsType Title sections\n\t\t\t\t\t{ \n\t\t\t\t\t\tTitledRequirementsSection \"Title_IV;Chapter_1_General_Provisions\" { \n\t\t\t\t\t\t\ttitle \"Chapter 1 General Provisions\" requirementsType Chapter sections {\n\t\t\t\t\t\t\t\tTitledRequirementsSection Article_325 {\n\t\t\t\t\t\t\t\t\ttitle \"Article 325: Approaches for calculating the own funds requirements_text for market risks\" requirementsType Article sections\n\t\t\t\t\t\t\t\t\t{ TitledRequirementsSection Artice_325_1 { title \"1\" requirementsType NumericParagraph sections { RequirementsSectionText Articel_325_1_text { text \"An institution shall calculate the own funds requirements for market risk of all trading book positions and non-trading book positions that are subject to foreign exchange risk or commodity risk in accordance with the following approaches:\" } , TitledRequirementsSection Article_325_1_a { title b requirementsType LetterParagraph sections { RequirementsSectionText Articel_325_1_a_text { text \"the standardised approach referred to in paragraph 2;\" } } } , TitledRequirementsSection Article_325_1_b { title b requirementsType LetterParagraph sections { RequirementsSectionText Articel_325_1_b_text { text \"the internal model approach set out in Chapter 5 of this Title for those risk categories for which the institution has been granted permission in accordance with Article 363 to use that approach.\" } } } } }\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t} } }\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t} \n\t\t\tallowedtypes AllowedTypes {\n\t\t\t\tallowedTypes { \n\t\t\t\t\tRequirementType Title,\n\t\t\t\t\tRequirementType Chapter,\n\t\t\t\t\tRequirementType Section,\n\t\t\t\t\tRequirementType Article,\n\t\t\t\t\tRequirementType NumericParagraph,\n\t\t\t\t\tRequirementType LetterParagraph,\n\t\t\t\t\tRequirementType RomanNumeralParagraph \n\t\t\t\t\t} \n\t\t\t\t} \n\n\t\t\t} \n\t\t"
   }
@@ -758,7 +758,7 @@ Params: {
 
 [Trace - 09:18:32 PM] Sending notification 'textDocument/publishDiagnostics'
 Params: {
-  "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg",
+  "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna",
   "diagnostics": [
     {
       "range": {
@@ -911,10 +911,10 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@50cbbced{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Title_IV}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@7cebc831{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|0}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.TitledRequirementsSectionImpl@50cbbced{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#Title_IV}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.RequirementTypeImpl@7cebc831{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|0}\u0027",
       "data": [
-        "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
-        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|0"
+        "http://www.eclipse.org/efbt/regdna#//TitledRequirementsSection/requirementsType",
+        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|0"
       ]
     },
     {
@@ -930,10 +930,10 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@14203cac{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_a}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@2c30869f{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|1}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.TitledRequirementsSectionImpl@14203cac{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#Article_325_1_a}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.RequirementTypeImpl@2c30869f{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|1}\u0027",
       "data": [
-        "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
-        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|1"
+        "http://www.eclipse.org/efbt/regdna#//TitledRequirementsSection/requirementsType",
+        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|1"
       ]
     },
     {
@@ -949,10 +949,10 @@ Params: {
       },
       "severity": 1,
       "code": "org.eclipse.emf.ecore.4",
-      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.TitledRequirementsSectionImpl@6b634f{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#Article_325_1_b}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.ecore4reg.dsl.ecore4reg.impl.RequirementTypeImpl@e101857{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|2}\u0027",
+      "message": "The feature \u0027requirementsType\u0027 of \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.TitledRequirementsSectionImpl@6b634f{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#Article_325_1_b}\u0027 contains an unresolved proxy \u0027org.eclipse.efbt.regdna.dsl.regdna.impl.RequirementTypeImpl@e101857{file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|2}\u0027",
       "data": [
-        "http://www.eclipse.org/efbt/ecore4reg#//TitledRequirementsSection/requirementsType",
-        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg#|2"
+        "http://www.eclipse.org/efbt/regdna#//TitledRequirementsSection/requirementsType",
+        "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna#|2"
       ]
     }
   ]
@@ -962,7 +962,7 @@ Params: {
 [Trace - 09:18:32 PM] Received request 'textDocument/documentSymbol - (1)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna"
   }
 }
 
@@ -970,7 +970,7 @@ Params: {
 [Trace - 09:18:32 PM] Received request 'textDocument/codeAction - (2)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna"
   },
   "range": {
     "start": {
@@ -1166,7 +1166,7 @@ Result: [
 [Trace - 09:18:32 PM] Received request 'textDocument/foldingRange - (3)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna"
   }
 }
 
@@ -1188,7 +1188,7 @@ Result: [
 [Trace - 09:18:32 PM] Received request 'textDocument/codeAction - (4)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna"
   },
   "range": {
     "start": {
@@ -1214,7 +1214,7 @@ Result: []
 [Trace - 09:18:32 PM] Received request 'textDocument/semanticTokens/full - (5)'
 Params: {
   "textDocument": {
-    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.ecore4reg"
+    "uri": "file:///workspaces/BIRDBenchVSCode/demo/crr_regulation_text.regdna"
   }
 }
 
