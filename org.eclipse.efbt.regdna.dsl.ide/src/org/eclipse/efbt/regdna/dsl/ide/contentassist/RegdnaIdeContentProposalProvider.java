@@ -6,7 +6,7 @@ import org.eclipse.xtext.ide.editor.contentassist.IIdeContentProposalAcceptor;
 import org.eclipse.xtext.ide.editor.contentassist.IdeContentProposalProvider;
 import org.eclipse.xtext.scoping.IScope;
 import org.eclipse.xtext.scoping.IScopeProvider;
-import org.eclipse.efbt.regdna.dsl.regdna.RegdnaPackage;
+import org.eclipse.efbt.regdna.dsl.regdna.regdnaPackage;
 import org.eclipse.efbt.regdna.dsl.services.RegdnaGrammarAccess;
 
 import com.google.common.base.Joiner;
@@ -24,7 +24,7 @@ public class RegdnaIdeContentProposalProvider extends IdeContentProposalProvider
 	protected void _createProposals(RuleCall ruleCall, ContentAssistContext context,
 			IIdeContentProposalAcceptor acceptor) {
 		/** if (RegdnaGrammarAccess.getGreetingRule().equals(ruleCall.getRule()) && context.getCurrentModel() != null) {
-			IScope scope = scopeProvider.getScope(context.getCurrentModel(), RegdnaPackage.Literals.GREETING__FROM);
+			IScope scope = scopeProvider.getScope(context.getCurrentModel(), regdnaPackage.Literals.GREETING__FROM);
 			acceptor.accept(getProposalCreator().createSnippet(
 					"Hello ${1|A,B,C|} from ${2|" + Joiner.on(",")
 							.join(Iterables.transform(scope.getAllElements(), it -> it.getName().toString())) + "|}!",

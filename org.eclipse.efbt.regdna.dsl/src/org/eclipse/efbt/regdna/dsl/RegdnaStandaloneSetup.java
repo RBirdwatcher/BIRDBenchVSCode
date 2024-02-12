@@ -4,7 +4,7 @@
 package org.eclipse.efbt.regdna.dsl;
 import com.google.inject.Injector;
 import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.efbt.regdna.dsl.regdna.RegdnaPackage;
+import org.eclipse.efbt.regdna.dsl.regdna.regdnaPackage;
 
 /**
  * Initialization support for running Xtext languages without Equinox extension registry.
@@ -18,7 +18,7 @@ public class RegdnaStandaloneSetup extends RegdnaStandaloneSetupGenerated {
 	@Override
 	public void register(Injector injector) {
 		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/regdna")) {
-			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/regdna", RegdnaPackage.eINSTANCE);
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/regdna", regdnaPackage.eINSTANCE);
 		}
 		super.register(injector);
 	}

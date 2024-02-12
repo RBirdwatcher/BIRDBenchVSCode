@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <package
             uri="http://www.eclipse.org/efbt/regdna"
-            class="org.eclipse.efbt.regdna.dsl.regdna.RegdnaPackage"
+            class="org.eclipse.efbt.regdna.dsl.regdna.regdnaPackage"
             genModel="model/regdna.genmodel"/>
    </extension>
 

@@ -16,12 +16,12 @@ import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
 import org.eclipse.emf.ecore.EcoreFactory
-import org.eclipse.efbt.regdna.model.regdna.ELPackage
-import org.eclipse.efbt.regdna.model.regdna.ELClass
-import org.eclipse.efbt.regdna.model.regdna.ELEnum
-import org.eclipse.efbt.regdna.model.regdna.ELAttribute
+import org.eclipse.efbt.regdna.dsl.regdna.ELPackage
+import org.eclipse.efbt.regdna.dsl.regdna.ELClass
+import org.eclipse.efbt.regdna.dsl.regdna.ELEnum
+import org.eclipse.efbt.regdna.dsl.regdna.ELAttribute
 import org.eclipse.emf.ecore.EcorePackage
-import org.eclipse.efbt.regdna.model.regdna.ELReference
+import org.eclipse.efbt.regdna.dsl.regdna.ELReference
 import org.eclipse.emf.ecore.EPackage
 import org.eclipse.emf.ecore.EEnum
 import org.eclipse.emf.ecore.EClass
@@ -31,14 +31,14 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
 import org.eclipse.emf.common.util.URI
 import java.nio.file.Path
 import java.nio.file.Files
-import org.eclipse.efbt.regdna.model.regdna.ELOperation
-import org.eclipse.efbt.regdna.model.regdna.ELDataType
+import org.eclipse.efbt.regdna.dsl.regdna.ELOperation
+import org.eclipse.efbt.regdna.dsl.regdna.ELDataType
 import org.eclipse.emf.common.util.BasicEList
-import org.eclipse.efbt.regdna.model.regdna.RulesForReport
-import org.eclipse.efbt.regdna.model.regdna.SelectColumnAttributeAs
-import org.eclipse.efbt.regdna.model.regdna.SelectColumnMemberAs
-import org.eclipse.efbt.regdna.model.regdna.SelectValueAs
-import org.eclipse.efbt.regdna.model.regdna.SelectDerivedColumnAs
+import org.eclipse.efbt.regdna.dsl.regdna.RulesForReport
+import org.eclipse.efbt.regdna.dsl.regdna.SelectColumnAttributeAs
+import org.eclipse.efbt.regdna.dsl.regdna.SelectColumnMemberAs
+import org.eclipse.efbt.regdna.dsl.regdna.SelectValueAs
+import org.eclipse.efbt.regdna.dsl.regdna.SelectDerivedColumnAs
 
 /**
  * Generates code from your model files on save.
