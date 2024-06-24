@@ -41,7 +41,7 @@
         
         "keyword": {
             "name": "keyword.control.Regdna",
-            "match": "\\b(RequirementsModule|rules|titledRequirementsSection|theTitle|theRequirementsType|theSections|theAllowedtypes|allowedTypes|requirementType|package|class|extends|contains|op|id|refers|enum|as|type|wraps|entity|generationRuleModule|generationRules|report|ILTable|tablePart|selectDerivedAttribute|selectMember|selectAttribute|selectValue|where|is_greater_than|theValue|annotation|dependency|displayName|requirements|enrichedAttribute|requiredAttributes|data_constraints|conditional|is_not_equals|member|equals|abstract|import|And|and|Or|Not|or|filter)\\b|!"
+            "match": "\\b(RequirementsModule|rules|titledRequirementsSection|theTitle|theRequirementsType|theSections|theAllowedtypes|allowedTypes|requirementType|package|class|extends|contains|op|id|refers|enum|as|type|wraps|entity|generationRuleModule|generationRules|report|ILTable|tablePart|selectDerivedAttribute|selectMember|selectAttribute|selectValue|where|is_greater_than|theValue|annotation|dependency|displayName|requirements|enrichedAttribute|requiredAttributes|data_constraints|conditional|is_not_equals|member|equals|abstract|import|And|and|Or|Not|or|filter|opposite|outputLayerEntity|mainEntity|inputSlice|CellBasedReport|RowColumnBasedReport)\\b|!"
 
         }
     },
